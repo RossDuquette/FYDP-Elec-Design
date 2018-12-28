@@ -20129,6 +20129,7 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="15PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="15pF"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="15PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="15pF"/>
 <part name="R1" library="WSL1206R0100FEA" deviceset="WSL1206R0100FEA" device=""/>
+<part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21937,8 +21938,9 @@ voltage to VDDB</text>
 <sheet>
 <description>Connectors</description>
 <plain>
-<text x="50.8" y="190.5" size="1.778" layer="91">what i2c connector. USB A?</text>
-<text x="58.42" y="160.02" size="1.778" layer="91">input power connector?</text>
+<text x="50.8" y="190.5" size="1.778" layer="91">what i2c connector. USB A connector from amphenol?</text>
+<text x="58.42" y="160.02" size="1.778" layer="91">input power connector?
+Motor connector? Maybe just wires into the pcb?</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -21962,6 +21964,11 @@ voltage to VDDB</text>
 <text x="-55.88" y="251.46" size="1.778" layer="91">LV flyback - RB520S30T1GOSCT (30V max)
 
 HV flyback - BAS16HT1GOSCT (100V max)</text>
+<text x="236.22" y="101.6" size="1.778" layer="91">LOAD SWITCH (LS) = PHB45NQ15T,118
+may need a way to get gate voltage to &gt;10V
+
+Flyback diode = SK520TR</text>
+<text x="238.76" y="88.9" size="1.778" layer="91">make sure to do quick thermal calculations for LS switch</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -22226,6 +22233,25 @@ HV flyback - BAS16HT1GOSCT (100V max)</text>
 <attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+<sheet>
+<description>Power</description>
+<plain>
+<text x="66.04" y="81.28" size="1.778" layer="91">definitely add a heat sink
+SMD: DSEP40-03AS
+TR-H: MBR40250TG</text>
+</plain>
+<instances>
+<instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>

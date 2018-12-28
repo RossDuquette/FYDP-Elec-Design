@@ -19262,92 +19262,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Resistors" urn="urn:adsk.eagle:library:532">
-<description>&lt;h3&gt;SparkFun Resistors&lt;/h3&gt;
-This library contains resistors. Reference designator:R. 
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="0603" urn="urn:adsk.eagle:footprint:39615/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="0603" urn="urn:adsk.eagle:package:39650/1" type="box" library_version="1">
-<description>Generic 1608 (0603) package
-0.2mm courtyard excess rounded to nearest 0.05mm.</description>
-<packageinstances>
-<packageinstance name="0603"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="RESISTOR" urn="urn:adsk.eagle:symbol:39614/1" library_version="1">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.524" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="0.05OHM" urn="urn:adsk.eagle:component:39744/1" prefix="R" library_version="1">
-<description>&lt;h3&gt;0.05Ω resistor&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-0603-1/5W-1%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:39650/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12535"/>
-<attribute name="VALUE" value="0.05"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="INA213AIDCKT">
 <packages>
 <package name="SOT65P210X110-6N">
@@ -20030,6 +19944,68 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </deviceset>
 </devicesets>
 </library>
+<library name="WSL1206R0100FEA">
+<packages>
+<package name="RESC3216X90">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
+<wire x1="-2.423" y1="1.133" x2="2.423" y2="1.133" width="0.0508" layer="39"/>
+<wire x1="2.423" y1="-1.133" x2="-2.423" y2="-1.133" width="0.0508" layer="39"/>
+<wire x1="-2.423" y1="-1.133" x2="-2.423" y2="1.133" width="0.0508" layer="39"/>
+<wire x1="2.423" y1="1.133" x2="2.423" y2="-1.133" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<text x="-2.52" y="1.22" size="0.8" layer="25">&gt;NAME</text>
+<text x="-2.52" y="-2.24" size="0.8" layer="27">&gt;VALUE</text>
+<wire x1="-0.4" y1="0.8" x2="0.4" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.8" x2="0.4" y2="-0.8" width="0.127" layer="21"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="WSL1206R0100FEA">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="WSL1206R0100FEA" prefix="R">
+<description>.01 OHM 1% 1/4W</description>
+<gates>
+<gate name="G$1" symbol="WSL1206R0100FEA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESC3216X90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Res Metal Strip 1206 0.01 Ohm 1% 0.25W_1/4W_ ?75ppm/C Molded SMD Automotive Embossed Plastic T/R "/>
+<attribute name="MF" value="Vishay Dale"/>
+<attribute name="MP" value="WSL1206R0100FEA"/>
+<attribute name="PACKAGE" value="1206 Vishay"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20141,7 +20117,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U1" library="VNQ5E160KTR-E" deviceset="VNQ5E160KTR-E" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="0.05OHM" device="-0603-1/5W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="0.02"/>
 <part name="U3" library="INA213AIDCKT" deviceset="INA213AIDCKT" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0402-16V-10%" package3d_urn="urn:adsk.eagle:package:37413/1" value="0.1uF"/>
@@ -20153,6 +20128,8 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 <part name="S1" library="FSM2JSMA" deviceset="FSM2JSMA" device=""/>
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="15PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="15pF"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="15PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="15pF"/>
+<part name="R1" library="WSL1206R0100FEA" deviceset="WSL1206R0100FEA" device=""/>
+<part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21962,7 +21939,8 @@ voltage to VDDB</text>
 <description>Connectors</description>
 <plain>
 <text x="50.8" y="190.5" size="1.778" layer="91">what i2c connector. USB A?</text>
-<text x="58.42" y="160.02" size="1.778" layer="91">input power connector?</text>
+<text x="58.42" y="160.02" size="1.778" layer="91">input power connector?
+Motor connector? Maybe just wires into the pcb?</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -21986,6 +21964,11 @@ voltage to VDDB</text>
 <text x="-55.88" y="251.46" size="1.778" layer="91">LV flyback - RB520S30T1GOSCT (30V max)
 
 HV flyback - BAS16HT1GOSCT (100V max)</text>
+<text x="236.22" y="101.6" size="1.778" layer="91">LOAD SWITCH (LS) = PHB45NQ15T,118
+may need a way to get gate voltage to &gt;10V
+
+Flyback diode = SK520TR</text>
+<text x="238.76" y="88.9" size="1.778" layer="91">make sure to do quick thermal calculations for LS switch</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -21999,10 +21982,6 @@ HV flyback - BAS16HT1GOSCT (100V max)</text>
 </instance>
 <instance part="GND15" gate="1" x="114.3" y="172.72" smashed="yes">
 <attribute name="VALUE" x="111.76" y="170.18" size="1.778" layer="96"/>
-</instance>
-<instance part="R10" gate="G$1" x="78.74" y="71.12" smashed="yes" rot="R90">
-<attribute name="NAME" x="77.216" y="71.12" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="80.264" y="71.12" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="U3" gate="A" x="116.84" y="73.66" smashed="yes">
 <attribute name="NAME" x="111.47925" y="87.8622" size="2.08333125" layer="95" ratio="10" rot="SR0"/>
@@ -22027,6 +22006,10 @@ HV flyback - BAS16HT1GOSCT (100V max)</text>
 </instance>
 <instance part="P+1" gate="1" x="55.88" y="236.22" smashed="yes">
 <attribute name="VALUE" x="53.34" y="231.14" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R1" gate="G$1" x="78.74" y="71.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="77.2414" y="67.31" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="74.422" y="64.77" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -22186,26 +22169,28 @@ HV flyback - BAS16HT1GOSCT (100V max)</text>
 </net>
 <net name="LOAD+" class="0">
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="76.2" x2="91.44" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="76.2" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U3" gate="A" pin="IN+"/>
 <wire x1="91.44" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="76.2" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
-<junction x="78.74" y="76.2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="78.74" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
 <label x="78.74" y="88.9" size="1.778" layer="95"/>
+<wire x1="78.74" y1="81.28" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="73.66" x2="91.44" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="81.28" x2="78.74" y2="81.28" width="0.1524" layer="91"/>
+<junction x="78.74" y="81.28"/>
 </segment>
 </net>
 <net name="LOAD-" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="IN-"/>
 <wire x1="99.06" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="71.12" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="66.04" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<junction x="78.74" y="66.04"/>
+<wire x1="91.44" y1="71.12" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="63.5" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
 <label x="78.74" y="50.8" size="1.778" layer="95"/>
+<wire x1="78.74" y1="60.96" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
+<junction x="78.74" y="60.96"/>
 </segment>
 </net>
 <net name="+5V" class="3">
@@ -22248,6 +22233,25 @@ HV flyback - BAS16HT1GOSCT (100V max)</text>
 <attribute name="LAST_DATE_TIME" x="185.42" y="1.27" size="2.54" layer="94"/>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
+</instance>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+<sheet>
+<description>Power</description>
+<plain>
+<text x="66.04" y="81.28" size="1.778" layer="91">definitely add a heat sink
+SMD: DSEP40-03AS
+TR-H: MBR40250TG</text>
+</plain>
+<instances>
+<instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
