@@ -21959,8 +21959,9 @@ Motor connector? Maybe just wires into the pcb?</text>
 <plain>
 <text x="68.58" y="246.38" size="2.54" layer="91">DC Motor Driver Uni-Direction</text>
 <text x="205.74" y="246.38" size="2.54" layer="91">Stepper Driver</text>
-<text x="71.12" y="162.56" size="1.778" layer="91">needs polarity protection (see datasheet)</text>
-<text x="20.32" y="233.68" size="1.778" layer="91">how to rename this vcc, lol</text>
+<text x="71.12" y="157.48" size="1.778" layer="91">needs polarity protection (see datasheet)
+
+Compare to: VNH7070ASTR</text>
 <text x="-55.88" y="251.46" size="1.778" layer="91">LV flyback - RB520S30T1GOSCT (30V max)
 
 HV flyback - BAS16HT1GOSCT (100V max)</text>
@@ -22226,6 +22227,13 @@ Flyback diode = SK520TR</text>
 <sheet>
 <description>Sensors</description>
 <plain>
+<text x="27.94" y="200.66" size="2.54" layer="91">Carousel</text>
+<text x="27.94" y="182.88" size="1.778" layer="91">Hall Sensor: SS41
+Load Sensor: SS-5GL111-F
+Cup Limit switch: FC2231-0000-0010-L</text>
+<text x="149.86" y="182.88" size="1.778" layer="91">Dispense thermistors: I kinda like: NXRT15XV103FA1B040
+need to make sure its okay for use.</text>
+<text x="149.86" y="203.2" size="2.54" layer="91">Dispense</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -22243,7 +22251,7 @@ Flyback diode = SK520TR</text>
 <sheet>
 <description>Power</description>
 <plain>
-<text x="66.04" y="81.28" size="1.778" layer="91">definitely add a heat sink
+<text x="66.04" y="81.28" size="1.778" layer="91">diodes for full bridge: definitely add a heat sink
 SMD: DSEP40-03AS
 TR-H: MBR40250TG</text>
 </plain>
