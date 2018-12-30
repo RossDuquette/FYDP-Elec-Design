@@ -18225,7 +18225,9 @@ voltage to VDDB</text>
 <plain>
 <text x="68.58" y="246.38" size="2.54" layer="91">DC Motor Driver Uni-Direction</text>
 <text x="312.42" y="226.06" size="2.54" layer="91">Stepper Driver</text>
-<text x="71.12" y="157.48" size="1.778" layer="91">Compare to: VNH7070ASTR</text>
+<text x="71.12" y="157.48" size="1.778" layer="91">needs polarity protection (see datasheet)
+
+Compare to: VNH7070ASTR</text>
 <text x="274.32" y="144.78" size="1.778" layer="91">make sure to do quick thermal calculations for LS switch</text>
 <text x="276.86" y="236.22" size="1.778" layer="91">for Pololu: https://www.pololu.com/product/2133/specs (uses DRV8825PWP)
 Need heat-sinking or forced air
@@ -18625,6 +18627,17 @@ Ensure hole diameter and spacing is suitable</text>
 </net>
 <net name="BLENDER+" class="0">
 <segment>
+<pinref part="U3" gate="A" pin="IN+"/>
+<wire x1="111.76" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="88.9" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
+<label x="99.06" y="99.06" size="1.778" layer="95"/>
+<wire x1="99.06" y1="91.44" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="83.82" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
+<junction x="99.06" y="91.44"/>
+</segment>
+<segment>
 <pinref part="U$12" gate="G$1" pin="S"/>
 <wire x1="274.32" y1="111.76" x2="274.32" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="101.6" x2="294.64" y2="101.6" width="0.1524" layer="91"/>
@@ -18872,17 +18885,6 @@ Ensure hole diameter and spacing is suitable</text>
 <label x="281.94" y="134.62" size="1.778" layer="95"/>
 <pinref part="U$12" gate="G$1" pin="D"/>
 <wire x1="274.32" y1="134.62" x2="274.32" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U3" gate="A" pin="IN+"/>
-<wire x1="111.76" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="88.9" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<label x="99.06" y="99.06" size="1.778" layer="95"/>
-<wire x1="99.06" y1="91.44" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="83.82" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="91.44" x2="99.06" y2="91.44" width="0.1524" layer="91"/>
-<junction x="99.06" y="91.44"/>
 </segment>
 </net>
 <net name="V-FREEZER" class="0">
