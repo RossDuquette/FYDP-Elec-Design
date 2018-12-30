@@ -366,11 +366,7 @@ Switches electronic signals</description>
 <gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MBR0530">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
