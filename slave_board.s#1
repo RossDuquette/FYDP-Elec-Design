@@ -23581,11 +23581,15 @@ need to make sure its okay for use.</text>
 <text x="66.04" y="81.28" size="1.778" layer="91">diodes for full wave: definitely add a heat sink
 SMD: DSEP40-03AS
 TR-H: MBR40250TG</text>
-<text x="124.46" y="144.78" size="1.778" layer="91">remember to add fuse</text>
+<text x="66.04" y="101.6" size="1.778" layer="91">remember to add fuse</text>
 <text x="154.94" y="180.34" size="1.778" layer="91">remember to add fuse:
 125V rated
 10A: SSQ 10
 12A: SSQ 12</text>
+<text x="180.34" y="147.32" size="1.778" layer="91">12V input as power supply:
+
+204W - LRS-200-12 = $41.7
+240W - SP-240-12 = $91.7</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
