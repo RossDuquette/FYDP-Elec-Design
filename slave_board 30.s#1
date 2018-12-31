@@ -20069,13 +20069,13 @@ Ensure hole diameter and spacing is suitable</text>
 <attribute name="VALUE" x="177.8" y="210.566" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="177.8" y="200.152" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
-<instance part="U$24" gate="G$1" x="93.98" y="195.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="93.4974" y="198.12" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="96.2914" y="198.12" size="1.778" layer="96" rot="R90"/>
+<instance part="U$24" gate="G$1" x="93.98" y="198.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="93.4974" y="200.66" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="96.2914" y="200.66" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$25" gate="G$1" x="162.56" y="195.58" smashed="yes" rot="R90">
-<attribute name="NAME" x="162.0774" y="198.12" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="164.8714" y="198.12" size="1.778" layer="96" rot="R90"/>
+<instance part="U$25" gate="G$1" x="162.56" y="198.12" smashed="yes" rot="R90">
+<attribute name="NAME" x="162.0774" y="200.66" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="164.8714" y="200.66" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND59" gate="1" x="162.56" y="187.96" smashed="yes">
 <attribute name="VALUE" x="160.02" y="185.42" size="1.778" layer="96"/>
@@ -20099,22 +20099,24 @@ Ensure hole diameter and spacing is suitable</text>
 <pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="GND60" gate="1" pin="GND"/>
 <pinref part="U$24" gate="G$1" pin="A"/>
+<pinref part="GND60" gate="1" pin="GND"/>
 <wire x1="93.98" y1="190.5" x2="93.98" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="J24" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="193.04" x2="93.98" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="203.2" x2="99.06" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="193.04" x2="99.06" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="193.04" x2="93.98" y2="193.04" width="0.1524" layer="91"/>
 <junction x="93.98" y="193.04"/>
 </segment>
 <segment>
-<pinref part="J25" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="203.2" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="U$25" gate="G$1" pin="A"/>
 <wire x1="162.56" y1="190.5" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="193.04" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
-<junction x="162.56" y="193.04"/>
 <pinref part="GND59" gate="1" pin="GND"/>
+<pinref part="J25" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="193.04" x2="162.56" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="203.2" x2="167.64" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="193.04" x2="162.56" y2="193.04" width="0.1524" layer="91"/>
+<junction x="162.56" y="193.04"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -20148,7 +20150,7 @@ Ensure hole diameter and spacing is suitable</text>
 <pinref part="J24" gate="G$1" pin="1"/>
 <pinref part="U$24" gate="G$1" pin="C"/>
 <wire x1="93.98" y1="205.74" x2="99.06" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="198.12" x2="93.98" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="200.66" x2="93.98" y2="205.74" width="0.1524" layer="91"/>
 <junction x="93.98" y="205.74"/>
 </segment>
 </net>
@@ -20171,7 +20173,7 @@ Ensure hole diameter and spacing is suitable</text>
 <pinref part="J25" gate="G$1" pin="1"/>
 <pinref part="U$25" gate="G$1" pin="C"/>
 <wire x1="162.56" y1="205.74" x2="167.64" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="205.74" x2="162.56" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="205.74" x2="162.56" y2="200.66" width="0.1524" layer="91"/>
 <junction x="162.56" y="205.74"/>
 </segment>
 </net>
