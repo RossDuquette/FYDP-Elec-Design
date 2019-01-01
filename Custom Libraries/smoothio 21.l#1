@@ -469,7 +469,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRFR9024TRPBF">
+<deviceset name="IRFR9024TRPBF" prefix="Q">
 <gates>
 <gate name="G$1" symbol="PMOS" x="-2.54" y="2.54"/>
 </gates>

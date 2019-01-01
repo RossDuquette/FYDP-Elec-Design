@@ -388,7 +388,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SSQ12">
+<deviceset name="SSQ12" prefix="F">
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
@@ -420,7 +420,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SK520TR">
+<deviceset name="SK520TR" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
@@ -436,7 +436,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PHB45NQ15T">
+<deviceset name="PHB45NQ15T" prefix="Q">
 <gates>
 <gate name="G$1" symbol="NMOS" x="0" y="0"/>
 </gates>
@@ -453,7 +453,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MBR0530">
+<deviceset name="MBR0530" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
@@ -469,7 +469,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRFR9024TRPBF">
+<deviceset name="IRFR9024TRPBF" prefix="Q">
 <gates>
 <gate name="G$1" symbol="PMOS" x="-2.54" y="2.54"/>
 </gates>

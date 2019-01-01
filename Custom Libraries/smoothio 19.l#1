@@ -372,7 +372,7 @@ Switches electrical signals</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DSEP40-03AS" prefix="D">
+<deviceset name="DSEP40-03AS">
 <gates>
 <gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
@@ -486,7 +486,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESR10EZPJ121" prefix="R">
+<deviceset name="ESR10EZPJ121">
 <description>120ohms - 0805 - 1%</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -503,7 +503,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C2012X7T2E104M125AE" prefix="C">
+<deviceset name="C2012X7T2E104M125AE">
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>

@@ -372,7 +372,7 @@ Switches electrical signals</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DSEP40-03AS">
+<deviceset name="DSEP40-03AS" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
@@ -388,7 +388,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SSQ12">
+<deviceset name="SSQ12" prefix="F">
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
@@ -404,7 +404,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="UHE2A470MPD">
+<deviceset name="UHE2A470MPD" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
 </gates>
@@ -420,7 +420,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SK520TR">
+<deviceset name="SK520TR" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
@@ -436,7 +436,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PHB45NQ15T">
+<deviceset name="PHB45NQ15T" prefix="Q">
 <gates>
 <gate name="G$1" symbol="NMOS" x="0" y="0"/>
 </gates>
@@ -453,7 +453,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MBR0530">
+<deviceset name="MBR0530" prefix="D">
 <gates>
 <gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
@@ -469,7 +469,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRFR9024TRPBF">
+<deviceset name="IRFR9024TRPBF" prefix="Q">
 <gates>
 <gate name="G$1" symbol="PMOS" x="-2.54" y="2.54"/>
 </gates>
@@ -486,7 +486,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESR10EZPJ121">
+<deviceset name="ESR10EZPJ121" prefix="R">
 <description>120ohms - 0805 - 1%</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -503,7 +503,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C2012X7T2E104M125AE">
+<deviceset name="C2012X7T2E104M125AE" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>

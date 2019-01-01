@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<!--This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0-->
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
-<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -63,8 +61,8 @@
 <wire x1="1.422" y1="-0.66" x2="-1.422" y2="-0.66" width="0.1524" layer="51"/>
 <wire x1="-1.422" y1="-0.66" x2="-1.422" y2="0.66" width="0.1524" layer="51"/>
 <wire x1="-1.422" y1="0.66" x2="1.422" y2="0.66" width="0.1524" layer="51"/>
-<rectangle x1="0.713015625" y1="-1.298709375" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.17176875" y1="-1.299140625" x2="-0.7112" y2="-0.7112" layer="51"/>
+<rectangle x1="0.713016" y1="-1.29871" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.17177" y1="-1.29914" x2="-0.7112" y2="-0.7112" layer="51"/>
 <smd name="D" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="S" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
 <smd name="G" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
@@ -90,8 +88,8 @@
 <wire x1="3.81" y1="0.508" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
 <circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
 <circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
-<text x="-11.4488" y="0" size="1.780940625" layer="96">&gt;VALUE</text>
-<text x="-11.4542" y="2.54536875" size="1.781759375" layer="95">&gt;NAME</text>
+<text x="-11.4488" y="0" size="1.78094" layer="96">&gt;VALUE</text>
+<text x="-11.4542" y="2.54537" size="1.78176" layer="95">&gt;NAME</text>
 <polygon width="0.1524" layer="94">
 <vertex x="3.81" y="0.508"/>
 <vertex x="3.302" y="-0.254"/>
@@ -108,7 +106,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BSS138L" prefix="Q">
+<deviceset name="BSS138L">
 <description>BSS138L
 N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <gates>
@@ -123,12 +121,14 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" Small Signal MOSFET 50V 200mA 3.5 Ohm Single N-Channel SOT-23 Logic Level "/>
-<attribute name="MF" value="ON Semiconductor"/>
+<attribute name="Price" value="None"/>
+<attribute name="Availability" value="Unavailable"/>
+<attribute name="Package" value="SOT-23 ON Semiconductor"/>
 <attribute name="MP" value="BSS138L"/>
-<attribute name="PACKAGE" value="SOT-23 ON Semiconductor"/>
-<attribute name="PRICE" value="None"/>
+<attribute name="Description" value="
+Small Signal MOSFET 50V 200mA 3.5 Ohm Single N-Channel SOT-23 Logic Level
+"/>
+<attribute name="MF" value="ON Semiconductor"/>
 </technology>
 </technologies>
 </device>

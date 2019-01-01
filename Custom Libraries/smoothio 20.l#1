@@ -486,7 +486,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ESR10EZPJ121" prefix="R">
+<deviceset name="ESR10EZPJ121">
 <description>120ohms - 0805 - 1%</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
