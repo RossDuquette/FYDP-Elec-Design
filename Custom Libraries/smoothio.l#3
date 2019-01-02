@@ -388,7 +388,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SSQ12" prefix="F">
+<deviceset name="SSQ12">
 <gates>
 <gate name="G$1" symbol="FUSE" x="0" y="0"/>
 </gates>
@@ -404,7 +404,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="UHE2A470MPD" prefix="C">
+<deviceset name="UHE2A470MPD">
 <gates>
 <gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
 </gates>

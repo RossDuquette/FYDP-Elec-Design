@@ -552,7 +552,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CL10A225KP8NNNC">
+<deviceset name="CL10A225KP8NNNC" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>

@@ -19050,46 +19050,40 @@ DISPENSE</text>
 <label x="294.64" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="/CUP_EN" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="J30" gate="G$1" pin="8"/>
 <wire x1="340.36" y1="142.24" x2="358.14" y2="142.24" width="0.1524" layer="91"/>
-<label x="340.36" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CUP_M0" class="0">
+<net name="N$4" class="0">
 <segment>
 <pinref part="J30" gate="G$1" pin="7"/>
 <wire x1="340.36" y1="139.7" x2="358.14" y2="139.7" width="0.1524" layer="91"/>
-<label x="340.36" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CUP_M1" class="0">
+<net name="N$5" class="0">
 <segment>
 <pinref part="J30" gate="G$1" pin="6"/>
 <wire x1="340.36" y1="137.16" x2="358.14" y2="137.16" width="0.1524" layer="91"/>
-<label x="340.36" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CUP_M2" class="0">
+<net name="N$6" class="0">
 <segment>
 <pinref part="J30" gate="G$1" pin="5"/>
 <wire x1="358.14" y1="134.62" x2="340.36" y2="134.62" width="0.1524" layer="91"/>
-<label x="340.36" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CUP_STEP" class="0">
+<net name="N$27" class="0">
 <segment>
 <pinref part="J30" gate="G$1" pin="2"/>
 <wire x1="340.36" y1="127" x2="358.14" y2="127" width="0.1524" layer="91"/>
-<label x="340.36" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CUP_DIR" class="0">
+<net name="N$28" class="0">
 <segment>
 <pinref part="J30" gate="G$1" pin="1"/>
 <wire x1="340.36" y1="124.46" x2="358.14" y2="124.46" width="0.1524" layer="91"/>
-<label x="340.36" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
