@@ -16116,10 +16116,8 @@ Switches electrical signals</description>
 <text x="-147.32" y="160.02" size="1.778" layer="91"></text>
 <text x="327.66" y="236.22" size="1.778" layer="91">Notes:
 make custom pins for mains 12 or 14 gauge wire
-2 blender outputs and curr sense for cleaner module
-lower curr sense resistor value
+stepper motor load switching
 Damping resistors on SPI for ICSP?
-Look into hall effect output voltage/type
 </text>
 <text x="342.9" y="162.56" size="1.778" layer="97">JP1 = VDDA-to-VDDB connection
 Closed by Default
@@ -18058,11 +18056,12 @@ voltage to VDDB</text>
 <text x="68.58" y="246.38" size="2.54" layer="91">DC Motor Driver Uni-Direction</text>
 <text x="312.42" y="226.06" size="2.54" layer="91">Carousel Stepper Driver</text>
 <text x="71.12" y="157.48" size="1.778" layer="91">Compare to: VNH7070ASTR</text>
-<text x="302.26" y="88.9" size="1.778" layer="91">make sure to do quick thermal calculations for LS switch
-Does blender need to be optoisolator</text>
+<text x="302.26" y="88.9" size="1.778" layer="91">make sure to do quick thermal calculations for LS switch</text>
 <text x="276.86" y="236.22" size="1.778" layer="91">for Pololu: https://www.pololu.com/product/2133/specs (uses DRV8825PWP)
 Need heat-sinking or forced air
-</text>
+
+carousel and cup dispense:
+Motor outputs go to relay board (4 relays) with carousel and cup dispense steppers attached</text>
 <text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip</text>
 <text x="355.6" y="66.04" size="1.778" layer="91">drive voltage = 10V</text>
 <text x="30.48" y="132.08" size="1.778" layer="91">FLYBACK DIODES</text>
@@ -18083,8 +18082,6 @@ DISPENSE</text>
 <text x="312.42" y="160.02" size="2.54" layer="91">Cup Stepper Driver</text>
 <text x="200.66" y="160.02" size="1.778" layer="91">solder over to provide better conduction</text>
 <text x="200.66" y="215.9" size="1.778" layer="91">solder over to provide better conduction</text>
-<text x="91.44" y="144.78" size="1.778" layer="91">2 blender outputs and curr sense for cleaner module</text>
-<text x="304.8" y="60.96" size="1.778" layer="91">This is supposed to be low side i think</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -18517,9 +18514,9 @@ DISPENSE</text>
 </net>
 <net name="CURR_SENS" class="0">
 <segment>
-<label x="165.1" y="106.68" size="1.778" layer="95"/>
+<label x="170.18" y="106.68" size="1.778" layer="95"/>
 <pinref part="U3" gate="A" pin="OUT"/>
-<wire x1="180.34" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BLENDER+" class="0">
@@ -19580,14 +19577,12 @@ SS-01GL111-FT</text>
 <text x="210.82" y="147.32" size="1.778" layer="91">NXRT15XV103FA1B040:
 25C -&gt; 10K -&gt; ~0.83V
 0C -&gt; ~5x10K -&gt; ~2.5V
--20C -&gt; ~10x10K -&gt; ~3.33V
-</text>
+-20C -&gt; ~10x10K -&gt; ~3.33V</text>
 <text x="180.34" y="165.1" size="1.778" layer="91">Note:
 Lower resistor value leads to higher voltage at -20C, 
 but less sensitivity at lower temps
 
 Need to tune</text>
-<text x="45.72" y="111.76" size="1.778" layer="91">possible schmitt trigger or cap for noise?</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes"/>
@@ -19902,7 +19897,6 @@ TR-H: MBR40250TG</text>
 <text x="185.42" y="60.96" size="1.778" layer="91">DC Fan for cooling</text>
 <text x="15.24" y="223.52" size="1.778" layer="91">drive voltage = 10V
 Id = -8.8A continuous</text>
-<text x="38.1" y="91.44" size="1.778" layer="91">do we need isolation between HVDC and blender control pin</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">
