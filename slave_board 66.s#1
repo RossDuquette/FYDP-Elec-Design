@@ -15347,8 +15347,6 @@ Switches electrical signals</description>
 <part name="C16" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-0805-10V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="10uF"/>
 <part name="C17" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10UF" device="-0805-10V-10%" package3d_urn="urn:adsk.eagle:package:37429/1" value="10uF"/>
 <part name="D1" library="smoothio" deviceset="MBR0530" device=""/>
-<part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND72" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18360,8 +18358,8 @@ need 3.5mm diameter</text>
 <attribute name="VALUE" x="48.26" y="223.52" size="1.778" layer="96"/>
 </instance>
 <instance part="R14" gate="G$1" x="25.4" y="208.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.9814" y="204.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="23.622" y="204.47" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="23.9014" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="21.082" y="201.93" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U3" gate="A" x="142.24" y="210.82" smashed="yes">
 <attribute name="NAME" x="136.87925" y="225.0222" size="2.08333125" layer="95" ratio="10" rot="SR0"/>
@@ -18378,8 +18376,8 @@ need 3.5mm diameter</text>
 <attribute name="VALUE" x="127" y="223.52" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="104.14" y="208.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.7214" y="204.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="102.362" y="204.47" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="102.6414" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="99.822" y="201.93" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J24" gate="G$1" x="259.08" y="236.22" smashed="yes" rot="R180">
 <attribute name="VALUE" x="261.62" y="241.046" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -18436,12 +18434,6 @@ need 3.5mm diameter</text>
 <instance part="J10" gate="G$1" x="160.02" y="116.84" smashed="yes" rot="R180">
 <attribute name="VALUE" x="162.56" y="121.666" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="162.56" y="111.252" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="GND64" gate="1" x="104.14" y="182.88" smashed="yes">
-<attribute name="VALUE" x="101.6" y="180.34" size="1.778" layer="96"/>
-</instance>
-<instance part="GND72" gate="1" x="25.4" y="182.88" smashed="yes">
-<attribute name="VALUE" x="22.86" y="180.34" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -18533,29 +18525,6 @@ need 3.5mm diameter</text>
 <wire x1="71.12" y1="104.14" x2="48.26" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="GND61" gate="1" pin="GND"/>
 <wire x1="48.26" y1="104.14" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U3" gate="A" pin="IN-"/>
-<wire x1="124.46" y1="208.28" x2="116.84" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="208.28" x2="116.84" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="200.66" x2="104.14" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="198.12" x2="104.14" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="198.12" x2="104.14" y2="185.42" width="0.1524" layer="91"/>
-<junction x="104.14" y="198.12"/>
-<pinref part="GND64" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U7" gate="A" pin="IN-"/>
-<wire x1="45.72" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="208.28" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="200.66" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
-<label x="25.4" y="195.58" size="1.778" layer="95"/>
-<wire x1="25.4" y1="198.12" x2="25.4" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
-<junction x="25.4" y="198.12"/>
-<pinref part="GND72" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V-12V_PROT" class="0">
@@ -18664,20 +18633,26 @@ need 3.5mm diameter</text>
 </net>
 <net name="V-HVDC" class="0">
 <segment>
-<wire x1="226.06" y1="236.22" x2="243.84" y2="236.22" width="0.1524" layer="91"/>
-<label x="226.06" y="236.22" size="1.778" layer="95"/>
-<pinref part="J24" gate="G$1" pin="1"/>
-<pinref part="D7" gate="G$1" pin="C"/>
-<wire x1="243.84" y1="236.22" x2="251.46" y2="236.22" width="0.1524" layer="91"/>
-<junction x="243.84" y="236.22"/>
+<pinref part="U7" gate="A" pin="IN+"/>
+<wire x1="38.1" y1="210.82" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="215.9" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
+<label x="25.4" y="226.06" size="1.778" layer="95"/>
+<wire x1="25.4" y1="218.44" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="210.82" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="218.44" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
+<junction x="25.4" y="218.44"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="215.9" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
-<label x="226.06" y="215.9" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$1" pin="1"/>
-<pinref part="D8" gate="G$1" pin="C"/>
-<wire x1="243.84" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
-<junction x="243.84" y="215.9"/>
+<pinref part="U3" gate="A" pin="IN+"/>
+<wire x1="116.84" y1="210.82" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="104.14" y1="215.9" x2="104.14" y2="218.44" width="0.1524" layer="91"/>
+<label x="104.14" y="226.06" size="1.778" layer="95"/>
+<wire x1="104.14" y1="218.44" x2="104.14" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="210.82" x2="116.84" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="218.44" x2="104.14" y2="218.44" width="0.1524" layer="91"/>
+<junction x="104.14" y="218.44"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -18727,18 +18702,7 @@ need 3.5mm diameter</text>
 <pinref part="D8" gate="G$1" pin="A"/>
 <wire x1="243.84" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
 <junction x="243.84" y="210.82"/>
-<label x="226.06" y="210.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U7" gate="A" pin="IN+"/>
-<wire x1="38.1" y1="210.82" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="215.9" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
-<label x="25.4" y="226.06" size="1.778" layer="95"/>
-<wire x1="25.4" y1="218.44" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="210.82" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="218.44" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
-<junction x="25.4" y="218.44"/>
+<label x="228.6" y="210.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BLENDER0-" class="0">
@@ -18750,18 +18714,49 @@ need 3.5mm diameter</text>
 <pinref part="D7" gate="G$1" pin="A"/>
 <junction x="243.84" y="231.14"/>
 <wire x1="243.84" y1="231.14" x2="226.06" y2="231.14" width="0.1524" layer="91"/>
-<label x="226.06" y="231.14" size="1.778" layer="95"/>
+<label x="228.6" y="231.14" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="V-BLENDER1" class="0">
+<segment>
+<wire x1="226.06" y1="215.9" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
+<label x="226.06" y="215.9" size="1.778" layer="95"/>
+<pinref part="J9" gate="G$1" pin="1"/>
+<pinref part="D8" gate="G$1" pin="C"/>
+<wire x1="243.84" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
+<junction x="243.84" y="215.9"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="IN+"/>
-<wire x1="116.84" y1="210.82" x2="124.46" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="215.9" x2="104.14" y2="218.44" width="0.1524" layer="91"/>
-<label x="104.14" y="226.06" size="1.778" layer="95"/>
-<wire x1="104.14" y1="218.44" x2="104.14" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="210.82" x2="116.84" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="218.44" x2="104.14" y2="218.44" width="0.1524" layer="91"/>
-<junction x="104.14" y="218.44"/>
+<pinref part="U3" gate="A" pin="IN-"/>
+<wire x1="124.46" y1="208.28" x2="116.84" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="208.28" x2="116.84" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="200.66" x2="104.14" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="198.12" x2="104.14" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="198.12" x2="104.14" y2="198.12" width="0.1524" layer="91"/>
+<junction x="104.14" y="198.12"/>
+<label x="104.14" y="195.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="V-BLENDER0" class="0">
+<segment>
+<wire x1="226.06" y1="236.22" x2="243.84" y2="236.22" width="0.1524" layer="91"/>
+<label x="226.06" y="236.22" size="1.778" layer="95"/>
+<pinref part="J24" gate="G$1" pin="1"/>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="243.84" y1="236.22" x2="251.46" y2="236.22" width="0.1524" layer="91"/>
+<junction x="243.84" y="236.22"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="IN-"/>
+<wire x1="45.72" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="208.28" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="200.66" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
+<label x="25.4" y="195.58" size="1.778" layer="95"/>
+<wire x1="25.4" y1="198.12" x2="25.4" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
+<junction x="25.4" y="198.12"/>
 </segment>
 </net>
 <net name="CURR_SENS0" class="0">
@@ -19142,6 +19137,7 @@ TR-H: MBR40250TG</text>
 <text x="185.42" y="60.96" size="1.778" layer="91">DC Fan for cooling</text>
 <text x="15.24" y="223.52" size="1.778" layer="91">drive voltage = 10V
 Id = -8.8A continuous</text>
+<text x="38.1" y="91.44" size="1.778" layer="91">do we need isolation between HVDC and blender control pin</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">

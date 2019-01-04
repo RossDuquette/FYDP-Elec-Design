@@ -18360,8 +18360,8 @@ need 3.5mm diameter</text>
 <attribute name="VALUE" x="48.26" y="223.52" size="1.778" layer="96"/>
 </instance>
 <instance part="R14" gate="G$1" x="25.4" y="208.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.9814" y="204.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="23.622" y="204.47" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="23.9014" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="21.082" y="201.93" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U3" gate="A" x="142.24" y="210.82" smashed="yes">
 <attribute name="NAME" x="136.87925" y="225.0222" size="2.08333125" layer="95" ratio="10" rot="SR0"/>
@@ -18378,8 +18378,8 @@ need 3.5mm diameter</text>
 <attribute name="VALUE" x="127" y="223.52" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="104.14" y="208.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="107.7214" y="204.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="102.362" y="204.47" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="102.6414" y="204.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="99.822" y="201.93" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="J24" gate="G$1" x="259.08" y="236.22" smashed="yes" rot="R180">
 <attribute name="VALUE" x="261.62" y="241.046" size="1.778" layer="96" font="vector" rot="R180"/>
