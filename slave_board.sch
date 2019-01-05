@@ -15173,7 +15173,6 @@ Switches electrical signals</description>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$3" library="SparkFun_Differential_I2C_Breakout_PCA9615_Qwiic" deviceset="SPARKFUN-IC-COMMS_PCA9615" device=""/>
-<part name="J6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH2" package3d_urn="urn:adsk.eagle:package:38043/1"/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="J8" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
@@ -15349,6 +15348,7 @@ Switches electrical signals</description>
 <part name="D1" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND72" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="J6" library="1935161" deviceset="1935161" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17297,14 +17297,13 @@ voltage to VDDB</text>
 Need heat-sinking or forced air
 </text>
 <text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip</text>
-<text x="137.16" y="248.92" size="1.778" layer="91">Note: HV devices have wider connector holes for direct soldering of heavy duty wires. 
-Ensure hole diameter and spacing is suitable</text>
 <text x="320.04" y="175.26" size="1.778" layer="91">OUTPUT</text>
 <text x="373.38" y="208.28" size="1.778" layer="91">/RESET</text>
 <text x="373.38" y="205.74" size="1.778" layer="91">/SLEEP</text>
 <text x="335.28" y="195.58" size="1.778" layer="91">PWM ON STEP TURN THE MOTOR</text>
 <text x="200.66" y="215.9" size="1.778" layer="91">solder over to provide better conduction</text>
 <text x="266.7" y="101.6" size="1.778" layer="91">drive voltage = 10V</text>
+<text x="154.94" y="243.84" size="1.778" layer="91">OSTVN06A150</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -19158,10 +19157,6 @@ Id = -8.8A continuous</text>
 <instance part="GND32" gate="1" x="152.4" y="93.98" smashed="yes">
 <attribute name="VALUE" x="149.86" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="J6" gate="G$1" x="71.12" y="109.22" smashed="yes">
-<attribute name="VALUE" x="68.58" y="104.394" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="68.58" y="114.808" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="GND35" gate="1" x="116.84" y="93.98" smashed="yes">
 <attribute name="VALUE" x="114.3" y="91.44" size="1.778" layer="96"/>
 </instance>
@@ -19310,6 +19305,10 @@ Id = -8.8A continuous</text>
 <instance part="D1" gate="G$1" x="198.12" y="233.68" smashed="yes">
 <attribute name="NAME" x="200.66" y="234.1626" size="1.778" layer="95"/>
 <attribute name="VALUE" x="185.42" y="231.3686" size="1.778" layer="96"/>
+</instance>
+<instance part="J6" gate="G$1" x="68.58" y="109.22" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.12548125" y="103.492659375" size="1.272740625" layer="95" rot="R180"/>
+<attribute name="VALUE" x="71.12808125" y="116.86423125" size="1.274040625" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -19479,7 +19478,6 @@ Id = -8.8A continuous</text>
 </net>
 <net name="M-" class="0">
 <segment>
-<pinref part="J6" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="109.22" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
@@ -19492,13 +19490,16 @@ Id = -8.8A continuous</text>
 <label x="109.22" y="109.22" size="1.778" layer="95"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="D5" gate="G$1" pin="C"/>
+<wire x1="78.74" y1="109.22" x2="78.74" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="106.68" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="J6" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="111.76" x2="83.82" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="J6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+5V" class="3">
