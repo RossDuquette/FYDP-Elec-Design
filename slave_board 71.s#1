@@ -13666,7 +13666,6 @@ by exp-lbrs.ulp</description>
 <package name="MBR0530">
 <smd name="1" x="-1.778" y="0" dx="1.02108125" dy="0.899159375" layer="1" rot="R90"/>
 <smd name="2" x="1.49098125" y="0" dx="1.02108125" dy="0.899159375" layer="1" rot="R90"/>
-<circle x="-2.032" y="0.889" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="SSQ12">
 <smd name="2" x="-1.524" y="0" dx="3.175" dy="2.032" layer="1" rot="R90"/>
@@ -14473,8 +14472,12 @@ Switches electrical signals</description>
 <part name="J30" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="J31" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="GND67" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D15" library="smoothio" deviceset="MBR0530" device=""/>
+<part name="D16" library="smoothio" deviceset="MBR0530" device=""/>
+<part name="D17" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="C27" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="47UF-POLAR" device="-PANASONIC_D-35V-20%" package3d_urn="urn:adsk.eagle:package:37420/1" value="47uF"/>
 <part name="GND70" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D18" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="GND71" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U7" library="INA213AIDCKT" deviceset="INA213AIDCKT" device=""/>
@@ -14490,6 +14493,7 @@ Switches electrical signals</description>
 <part name="J24" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH2" package3d_urn="urn:adsk.eagle:package:38043/1"/>
 <part name="J25" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="P+28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
+<part name="D6" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="D7" library="smoothio" deviceset="SK520TR" device=""/>
 <part name="J9" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH2" package3d_urn="urn:adsk.eagle:package:38043/1"/>
 <part name="D8" library="smoothio" deviceset="SK520TR" device=""/>
@@ -14556,11 +14560,6 @@ Switches electrical signals</description>
 <part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="R15" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="D6" library="smoothio" deviceset="MBR0530" device=""/>
-<part name="D14" library="smoothio" deviceset="MBR0530" device=""/>
-<part name="D15" library="smoothio" deviceset="MBR0530" device=""/>
-<part name="D16" library="smoothio" deviceset="MBR0530" device=""/>
-<part name="D17" library="smoothio" deviceset="MBR0530" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16506,8 +16505,7 @@ voltage to VDDB</text>
 <text x="276.86" y="236.22" size="1.778" layer="91">for Pololu: https://www.pololu.com/product/2133/specs (uses DRV8825PWP)
 Need heat-sinking or forced air
 </text>
-<text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip
-but not too close that cant solder</text>
+<text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip</text>
 <text x="320.04" y="175.26" size="1.778" layer="91">OUTPUT</text>
 <text x="373.38" y="208.28" size="1.778" layer="91">/RESET</text>
 <text x="373.38" y="205.74" size="1.778" layer="91">/SLEEP</text>
@@ -16638,12 +16636,28 @@ but not too close that cant solder</text>
 <instance part="GND67" gate="1" x="170.18" y="116.84" smashed="yes">
 <attribute name="VALUE" x="167.64" y="114.3" size="1.778" layer="96"/>
 </instance>
+<instance part="D15" gate="G$1" x="144.78" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.24" y="149.3774" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="142.24" y="152.1714" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D16" gate="G$1" x="144.78" y="139.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.24" y="139.2174" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="142.24" y="142.0114" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D17" gate="G$1" x="144.78" y="129.54" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.24" y="129.0574" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="142.24" y="131.8514" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="C27" gate="G$1" x="40.64" y="157.48" smashed="yes">
 <attribute name="NAME" x="41.656" y="158.115" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="41.656" y="153.289" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="GND70" gate="1" x="40.64" y="147.32" smashed="yes">
 <attribute name="VALUE" x="38.1" y="144.78" size="1.778" layer="96"/>
+</instance>
+<instance part="D18" gate="G$1" x="144.78" y="119.38" smashed="yes" rot="R180">
+<attribute name="NAME" x="142.24" y="118.8974" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="142.24" y="121.6914" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND71" gate="1" x="111.76" y="104.14" smashed="yes">
 <attribute name="VALUE" x="109.22" y="101.6" size="1.778" layer="96"/>
@@ -16725,22 +16739,6 @@ but not too close that cant solder</text>
 </instance>
 <instance part="P+9" gate="1" x="226.06" y="35.56" smashed="yes">
 <attribute name="VALUE" x="223.52" y="30.48" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="D14" gate="G$1" x="144.78" y="149.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="142.24" y="149.3774" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="142.24" y="152.1714" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="D15" gate="G$1" x="144.78" y="139.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="142.24" y="139.2174" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="142.24" y="142.0114" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="D16" gate="G$1" x="144.78" y="129.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="142.24" y="129.0574" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="142.24" y="131.8514" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="D17" gate="G$1" x="144.78" y="119.38" smashed="yes" rot="R180">
-<attribute name="NAME" x="142.24" y="118.8974" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="142.24" y="121.6914" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -16879,20 +16877,20 @@ but not too close that cant solder</text>
 <segment>
 <pinref part="GND66" gate="1" pin="GND"/>
 <wire x1="149.86" y1="116.84" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="D15" gate="G$1" pin="A"/>
 <wire x1="149.86" y1="119.38" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="129.54" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="139.7" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="149.86" x2="147.32" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="D18" gate="G$1" pin="A"/>
 <wire x1="147.32" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
 <junction x="149.86" y="119.38"/>
+<pinref part="D17" gate="G$1" pin="A"/>
 <wire x1="149.86" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
 <junction x="149.86" y="129.54"/>
+<pinref part="D16" gate="G$1" pin="A"/>
 <wire x1="147.32" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 <junction x="149.86" y="139.7"/>
-<pinref part="D14" gate="G$1" pin="A"/>
-<pinref part="D15" gate="G$1" pin="A"/>
-<pinref part="D16" gate="G$1" pin="A"/>
-<pinref part="D17" gate="G$1" pin="A"/>
 </segment>
 <segment>
 <pinref part="J28" gate="G$1" pin="1"/>
@@ -16966,10 +16964,6 @@ but not too close that cant solder</text>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
 <wire x1="226.06" y1="30.48" x2="226.06" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="30.48" x2="231.14" y2="30.48" width="0.1524" layer="91"/>
-<junction x="226.06" y="30.48"/>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="231.14" y1="30.48" x2="231.14" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -17332,9 +17326,9 @@ but not too close that cant solder</text>
 <pinref part="U6" gate="G$1" pin="OUT1-1"/>
 <wire x1="109.22" y1="149.86" x2="111.76" y2="149.86" width="0.1524" layer="91"/>
 <junction x="111.76" y="149.86"/>
+<pinref part="D15" gate="G$1" pin="C"/>
 <wire x1="111.76" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 <label x="116.84" y="149.86" size="1.778" layer="95"/>
-<pinref part="D14" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="LIQUID3" class="0">
@@ -17354,8 +17348,8 @@ but not too close that cant solder</text>
 <wire x1="109.22" y1="129.54" x2="111.76" y2="129.54" width="0.1524" layer="91"/>
 <junction x="111.76" y="129.54"/>
 <wire x1="111.76" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="D17" gate="G$1" pin="C"/>
 <label x="116.84" y="129.54" size="1.778" layer="95"/>
-<pinref part="D16" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="POWDER1" class="0">
@@ -17374,9 +17368,9 @@ but not too close that cant solder</text>
 <pinref part="U6" gate="G$1" pin="OUT4-1"/>
 <wire x1="109.22" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
 <junction x="111.76" y="119.38"/>
+<pinref part="D18" gate="G$1" pin="C"/>
 <wire x1="111.76" y1="119.38" x2="142.24" y2="119.38" width="0.1524" layer="91"/>
 <label x="116.84" y="119.38" size="1.778" layer="95"/>
-<pinref part="D17" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="LIQUID2" class="0">
@@ -17395,9 +17389,9 @@ but not too close that cant solder</text>
 <pinref part="U6" gate="G$1" pin="OUT2-1"/>
 <wire x1="109.22" y1="139.7" x2="111.76" y2="139.7" width="0.1524" layer="91"/>
 <junction x="111.76" y="139.7"/>
+<pinref part="D16" gate="G$1" pin="C"/>
 <wire x1="111.76" y1="139.7" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
 <label x="116.84" y="139.7" size="1.778" layer="95"/>
-<pinref part="D15" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="BLENDER1-" class="0">
@@ -17609,6 +17603,10 @@ need 3.5mm diameter</text>
 <instance part="P+28" gate="1" x="226.06" y="195.58" smashed="yes">
 <attribute name="VALUE" x="223.52" y="190.5" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="D6" gate="G$1" x="243.84" y="190.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="243.3574" y="193.04" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="246.1514" y="193.04" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="D7" gate="G$1" x="243.84" y="233.68" smashed="yes" rot="R90">
 <attribute name="NAME" x="243.3574" y="236.22" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="246.1514" y="236.22" size="1.778" layer="96" rot="R90"/>
@@ -17655,10 +17653,6 @@ need 3.5mm diameter</text>
 <instance part="J11" gate="G$1" x="259.08" y="167.64" smashed="yes">
 <attribute name="NAME" x="256.53451875" y="173.367340625" size="1.272740625" layer="95"/>
 <attribute name="VALUE" x="256.53191875" y="159.99576875" size="1.274040625" layer="96"/>
-</instance>
-<instance part="D6" gate="G$1" x="243.84" y="190.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="243.3574" y="193.04" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="246.1514" y="193.04" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -17926,8 +17920,8 @@ need 3.5mm diameter</text>
 <pinref part="J25" gate="G$1" pin="2"/>
 <wire x1="251.46" y1="190.5" x2="246.38" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="190.5" x2="246.38" y2="187.96" width="0.1524" layer="91"/>
-<label x="228.6" y="185.42" size="1.778" layer="95"/>
 <wire x1="246.38" y1="187.96" x2="243.84" y2="187.96" width="0.1524" layer="91"/>
+<label x="228.6" y="185.42" size="1.778" layer="95"/>
 <pinref part="D6" gate="G$1" pin="A"/>
 <wire x1="243.84" y1="187.96" x2="226.06" y2="187.96" width="0.1524" layer="91"/>
 <junction x="243.84" y="187.96"/>
@@ -18357,7 +18351,6 @@ TR-H: MBR40250TG</text>
 <text x="185.42" y="60.96" size="1.778" layer="91">DC Fan for cooling</text>
 <text x="15.24" y="223.52" size="1.778" layer="91">drive voltage = 10V
 Id = -8.8A continuous</text>
-<text x="147.32" y="111.76" size="1.778" layer="91">may need to change since only rated for 100V (derating)</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">

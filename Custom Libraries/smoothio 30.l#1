@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -200,7 +200,6 @@
 <package name="MBR0530">
 <smd name="1" x="-1.778" y="0" dx="1.02108125" dy="0.899159375" layer="1" rot="R90"/>
 <smd name="2" x="1.49098125" y="0" dx="1.02108125" dy="0.899159375" layer="1" rot="R90"/>
-<circle x="-2.032" y="0.889" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="IRFR9024TRPBF">
 <smd name="G" x="-2.286" y="0" dx="2.286" dy="1.397" layer="1" rot="R90"/>
@@ -253,10 +252,6 @@
 <smd name="3" x="3.175" y="-0.635" dx="1.27" dy="0.635" layer="1"/>
 <smd name="2" x="-3.175" y="-0.635" dx="1.27" dy="0.635" layer="1"/>
 <smd name="1" x="-3.175" y="0.635" dx="1.27" dy="0.635" layer="1"/>
-<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="UHE2A470MPD" urn="urn:adsk.eagle:footprint:37387/1" locally_modified="yes">
 <description>5 mm spaced PTHs in 10 mm diameter silk ring</description>
@@ -485,10 +480,6 @@ Switches electrical signals</description>
 </gates>
 <devices>
 <device name="" package="UHE2A470MPD">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>

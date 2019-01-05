@@ -14556,11 +14556,11 @@ Switches electrical signals</description>
 <part name="R11" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="R15" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="D6" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="D14" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="D15" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="D16" library="smoothio" deviceset="MBR0530" device=""/>
 <part name="D17" library="smoothio" deviceset="MBR0530" device=""/>
+<part name="D6" library="smoothio" deviceset="MBR0530" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16506,8 +16506,7 @@ voltage to VDDB</text>
 <text x="276.86" y="236.22" size="1.778" layer="91">for Pololu: https://www.pololu.com/product/2133/specs (uses DRV8825PWP)
 Need heat-sinking or forced air
 </text>
-<text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip
-but not too close that cant solder</text>
+<text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip</text>
 <text x="320.04" y="175.26" size="1.778" layer="91">OUTPUT</text>
 <text x="373.38" y="208.28" size="1.778" layer="91">/RESET</text>
 <text x="373.38" y="205.74" size="1.778" layer="91">/SLEEP</text>
@@ -18357,7 +18356,6 @@ TR-H: MBR40250TG</text>
 <text x="185.42" y="60.96" size="1.778" layer="91">DC Fan for cooling</text>
 <text x="15.24" y="223.52" size="1.778" layer="91">drive voltage = 10V
 Id = -8.8A continuous</text>
-<text x="147.32" y="111.76" size="1.778" layer="91">may need to change since only rated for 100V (derating)</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0" smashed="yes">

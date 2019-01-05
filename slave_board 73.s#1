@@ -16506,8 +16506,7 @@ voltage to VDDB</text>
 <text x="276.86" y="236.22" size="1.778" layer="91">for Pololu: https://www.pololu.com/product/2133/specs (uses DRV8825PWP)
 Need heat-sinking or forced air
 </text>
-<text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip
-but not too close that cant solder</text>
+<text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip</text>
 <text x="320.04" y="175.26" size="1.778" layer="91">OUTPUT</text>
 <text x="373.38" y="208.28" size="1.778" layer="91">/RESET</text>
 <text x="373.38" y="205.74" size="1.778" layer="91">/SLEEP</text>
