@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -258,7 +258,7 @@
 <wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
 </package>
-<package name="UHE2A470MPD" urn="urn:adsk.eagle:footprint:37387/1" locally_modified="yes">
+<package name="UCS2E470MHD1TO" urn="urn:adsk.eagle:footprint:37387/1" locally_modified="yes">
 <description>5 mm spaced PTHs in 10 mm diameter silk ring</description>
 <wire x1="-1.905" y1="2.54" x2="-3.175" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="3.175" y1="2.54" x2="1.905" y2="2.54" width="0.2032" layer="21"/>
@@ -268,6 +268,17 @@
 <pad name="-" x="2.5" y="0" drill="0.9" diameter="1.9304" shape="square"/>
 <text x="0" y="-5.207" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <text x="0" y="5.207" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+</package>
+<package name="UVK2D101MHD1TN">
+<description>7.5 mm spaced PTHs in 16 mm diameter silk ring</description>
+<wire x1="-2.921" y1="2.794" x2="-4.191" y2="2.794" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="2.794" x2="3.175" y2="2.794" width="0.2032" layer="21"/>
+<wire x1="-3.556" y1="3.429" x2="-3.556" y2="2.159" width="0.2032" layer="21"/>
+<pad name="+" x="-3.516" y="0" drill="0.9" diameter="1.9304"/>
+<pad name="-" x="3.985259375" y="0" drill="0.9" diameter="1.9304" shape="square"/>
+<text x="1.27" y="-9.271" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<text x="0" y="8.763" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<circle x="0.254" y="0" radius="8.001" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -479,12 +490,12 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="UHE2A470MPD" prefix="C">
+<deviceset name="UCS2E470MHD1TO" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="UHE2A470MPD">
+<device name="" package="UCS2E470MHD1TO">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
@@ -637,6 +648,22 @@ Switches electrical signals</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UVK2D101MHD1TN">
+<gates>
+<gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UVK2D101MHD1TN">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
