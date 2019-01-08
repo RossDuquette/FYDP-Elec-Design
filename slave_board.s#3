@@ -14059,10 +14059,6 @@ by exp-lbrs.ulp</description>
 <text x="6.35" y="5.08" size="1.27" layer="21">&gt;NAME</text>
 <text x="-12.7" y="5.08" size="1.27" layer="21">&gt;VALUE</text>
 </package>
-<package name="SK520TR">
-<smd name="1" x="-3.175" y="0" dx="3.175" dy="5.2832" layer="1"/>
-<smd name="2" x="2.8956" y="0" dx="3.175" dy="5.2832" layer="1"/>
-</package>
 <package name="PHB45NQ15T">
 <smd name="1" x="-2.54" y="0" dx="3.0988" dy="1.2954" layer="1" rot="R90"/>
 <smd name="3" x="2.54" y="0" dx="3.0988" dy="1.2954" layer="1" rot="R90"/>
@@ -14102,16 +14098,9 @@ by exp-lbrs.ulp</description>
 <text x="0" y="-5.207" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <text x="0" y="5.207" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 </package>
-<package name="UVK2D101MHD1TN">
-<description>7.5 mm spaced PTHs in 16 mm diameter silk ring</description>
-<wire x1="-2.921" y1="2.794" x2="-4.191" y2="2.794" width="0.2032" layer="21"/>
-<wire x1="4.445" y1="2.794" x2="3.175" y2="2.794" width="0.2032" layer="21"/>
-<wire x1="-3.556" y1="3.429" x2="-3.556" y2="2.159" width="0.2032" layer="21"/>
-<pad name="+" x="-3.516" y="0" drill="0.9" diameter="1.9304"/>
-<pad name="-" x="3.985259375" y="0" drill="0.9" diameter="1.9304" shape="square"/>
-<text x="1.27" y="-9.271" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-<text x="0" y="8.763" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<circle x="0.254" y="0" radius="8.001" width="0.127" layer="21"/>
+<package name="SK520TR">
+<smd name="1" x="-3.175" y="0" dx="3.175" dy="5.2832" layer="1"/>
+<smd name="2" x="2.8956" y="0" dx="3.175" dy="5.2832" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -14314,22 +14303,6 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SK520TR" prefix="D">
-<gates>
-<gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SK520TR">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PHB45NQ15T" prefix="Q">
 <gates>
 <gate name="G$1" symbol="NMOS" x="0" y="0"/>
@@ -14398,15 +14371,15 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="UVK2D101MHD1TN">
+<deviceset name="SK520TR" prefix="D">
 <gates>
-<gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
+<gate name="G$1" symbol="DIODE_D" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="UVK2D101MHD1TN">
+<device name="" package="SK520TR">
 <connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14895,9 +14868,7 @@ Switches electrical signals</description>
 <part name="J24" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH2" package3d_urn="urn:adsk.eagle:package:38043/1"/>
 <part name="J25" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="P+28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="D7" library="smoothio" deviceset="SK520TR" device=""/>
 <part name="J9" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH2" package3d_urn="urn:adsk.eagle:package:38043/1"/>
-<part name="D8" library="smoothio" deviceset="SK520TR" device=""/>
 <part name="Q2" library="smoothio" deviceset="PHB45NQ15T" device=""/>
 <part name="U4" library="VNH7070ASTR" deviceset="VNH7070ASTR" device=""/>
 <part name="C24" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
@@ -14998,7 +14969,11 @@ Switches electrical signals</description>
 <part name="TP19" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
 <part name="C20" library="smoothio" deviceset="UCS2E470MHD1TO" device=""/>
 <part name="C21" library="smoothio" deviceset="UCS2E470MHD1TO" device=""/>
-<part name="U$1" library="smoothio" deviceset="UVK2D101MHD1TN" device=""/>
+<part name="C19" library="smoothio" deviceset="UCS2E470MHD1TO" device=""/>
+<part name="D7" library="smoothio" deviceset="SK520TR" device=""/>
+<part name="D8" library="smoothio" deviceset="SK520TR" device=""/>
+<part name="GND79" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND80" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17309,6 +17284,20 @@ but not too close that cant solder</text>
 <attribute name="NAME" x="266.7" y="210.82" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="271.78" y="210.82" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
+<instance part="D7" gate="G$1" x="289.56" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="287.02" y="111.2774" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="287.02" y="114.0714" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D8" gate="G$1" x="289.56" y="76.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="287.02" y="75.7174" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="287.02" y="78.5114" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND79" gate="1" x="297.18" y="111.76" smashed="yes" rot="R90">
+<attribute name="VALUE" x="299.72" y="109.22" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND80" gate="1" x="297.18" y="76.2" smashed="yes" rot="R90">
+<attribute name="VALUE" x="299.72" y="73.66" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17524,6 +17513,16 @@ but not too close that cant solder</text>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="GND73" gate="1" pin="GND"/>
 <wire x1="248.92" y1="55.88" x2="248.92" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="GND79" gate="1" pin="GND"/>
+<wire x1="294.64" y1="111.76" x2="292.1" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D8" gate="G$1" pin="A"/>
+<pinref part="GND80" gate="1" pin="GND"/>
+<wire x1="294.64" y1="76.2" x2="292.1" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="3">
@@ -17983,6 +17982,7 @@ but not too close that cant solder</text>
 <wire x1="264.16" y1="76.2" x2="287.02" y2="76.2" width="0.1524" layer="91"/>
 <label x="269.24" y="76.2" size="1.778" layer="95"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="D8" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="COOLANT-" class="2">
@@ -18004,6 +18004,7 @@ but not too close that cant solder</text>
 <wire x1="264.16" y1="111.76" x2="287.02" y2="111.76" width="0.1524" layer="91"/>
 <label x="269.24" y="111.76" size="1.778" layer="95"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
+<pinref part="D7" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="V-HEATPUMP" class="0">
@@ -18193,17 +18194,9 @@ need 3.5mm diameter</text>
 <instance part="P+28" gate="1" x="226.06" y="195.58" smashed="yes">
 <attribute name="VALUE" x="223.52" y="190.5" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D7" gate="G$1" x="243.84" y="233.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="243.3574" y="236.22" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="246.1514" y="236.22" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="J9" gate="G$1" x="259.08" y="215.9" smashed="yes" rot="R180">
 <attribute name="VALUE" x="261.62" y="220.726" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="261.62" y="210.312" size="1.778" layer="95" font="vector" rot="R180"/>
-</instance>
-<instance part="D8" gate="G$1" x="243.84" y="213.36" smashed="yes" rot="R90">
-<attribute name="NAME" x="243.3574" y="215.9" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="246.1514" y="215.9" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U4" gate="G$1" x="93.98" y="109.22" smashed="yes">
 <attribute name="NAME" x="76.2" y="130.54" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -18465,20 +18458,14 @@ need 3.5mm diameter</text>
 </net>
 <net name="V-HVDC" class="0">
 <segment>
-<wire x1="226.06" y1="236.22" x2="243.84" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="236.22" x2="251.46" y2="236.22" width="0.1524" layer="91"/>
 <label x="226.06" y="236.22" size="1.778" layer="95"/>
 <pinref part="J24" gate="G$1" pin="1"/>
-<pinref part="D7" gate="G$1" pin="C"/>
-<wire x1="243.84" y1="236.22" x2="251.46" y2="236.22" width="0.1524" layer="91"/>
-<junction x="243.84" y="236.22"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="215.9" x2="243.84" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
 <label x="226.06" y="215.9" size="1.778" layer="95"/>
 <pinref part="J9" gate="G$1" pin="1"/>
-<pinref part="D8" gate="G$1" pin="C"/>
-<wire x1="243.84" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
-<junction x="243.84" y="215.9"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -18519,13 +18506,10 @@ need 3.5mm diameter</text>
 </net>
 <net name="BLENDER1-" class="0">
 <segment>
-<wire x1="243.84" y1="210.82" x2="246.38" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="210.82" x2="246.38" y2="213.36" width="0.1524" layer="91"/>
 <pinref part="J9" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="213.36" x2="251.46" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="D8" gate="G$1" pin="A"/>
-<wire x1="243.84" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
-<junction x="243.84" y="210.82"/>
+<wire x1="246.38" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
 <label x="226.06" y="210.82" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -18542,13 +18526,10 @@ need 3.5mm diameter</text>
 </net>
 <net name="BLENDER0-" class="0">
 <segment>
-<wire x1="243.84" y1="231.14" x2="246.38" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="231.14" x2="246.38" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="J24" gate="G$1" pin="2"/>
 <wire x1="246.38" y1="233.68" x2="251.46" y2="233.68" width="0.1524" layer="91"/>
-<pinref part="D7" gate="G$1" pin="A"/>
-<junction x="243.84" y="231.14"/>
-<wire x1="243.84" y1="231.14" x2="226.06" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="231.14" x2="226.06" y2="231.14" width="0.1524" layer="91"/>
 <label x="226.06" y="231.14" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -19146,7 +19127,7 @@ Id = -8.8A continuous</text>
 <attribute name="NAME" x="176.53" y="107.95" size="1.27" layer="95" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="176.53" y="100.33" size="1.27" layer="96" ratio="10" rot="R270"/>
 </instance>
-<instance part="U$1" gate="G$1" x="152.4" y="101.6" smashed="yes" rot="R270">
+<instance part="C19" gate="G$1" x="152.4" y="101.6" smashed="yes" rot="R270">
 <attribute name="NAME" x="156.21" y="107.95" size="1.27" layer="95" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="156.21" y="100.33" size="1.27" layer="96" ratio="10" rot="R270"/>
 </instance>
@@ -19178,7 +19159,7 @@ Id = -8.8A continuous</text>
 <junction x="170.18" y="106.68"/>
 <pinref part="C20" gate="G$1" pin="+"/>
 <pinref part="C21" gate="G$1" pin="+"/>
-<pinref part="U$1" gate="G$1" pin="+"/>
+<pinref part="C19" gate="G$1" pin="+"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -19237,7 +19218,7 @@ Id = -8.8A continuous</text>
 <junction x="162.56" y="96.52"/>
 <pinref part="C20" gate="G$1" pin="-"/>
 <pinref part="C21" gate="G$1" pin="-"/>
-<pinref part="U$1" gate="G$1" pin="-"/>
+<pinref part="C19" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="121.92" y1="111.76" x2="116.84" y2="111.76" width="0.1524" layer="91"/>
