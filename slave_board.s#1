@@ -15138,6 +15138,7 @@ voltage to VDDB</text>
 <text x="214.63" y="155.575" size="1.6764" layer="91">(MISO)</text>
 <text x="214.63" y="150.495" size="1.6764" layer="91">(SCK)</text>
 <text x="214.63" y="153.035" size="1.6764" layer="91">(MOSI)</text>
+<text x="236.22" y="182.88" size="1.778" layer="91">DONT PUT PWM PIN WITH LED</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -18447,7 +18448,7 @@ AH1815-P-BDI-ND</text>
 <pinref part="P+33" gate="1" pin="+5V"/>
 </segment>
 </net>
-<net name="V-THERMISTOR0" class="0">
+<net name="THERMISTOR0" class="2">
 <segment>
 <label x="177.8" y="154.94" size="1.778" layer="95"/>
 <wire x1="167.64" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
@@ -18567,7 +18568,7 @@ AH1815-P-BDI-ND</text>
 <label x="106.68" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V-THERMISTOR1" class="0">
+<net name="THERMISTOR1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="R23" gate="G$1" pin="1"/>

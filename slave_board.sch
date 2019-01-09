@@ -16339,7 +16339,7 @@ voltage to VDDB</text>
 <pinref part="ICSP1" gate="A" pin="5"/>
 </segment>
 </net>
-<net name="PB3" class="0">
+<net name="MISO" class="0">
 <segment>
 <wire x1="30.48" y1="177.8" x2="55.88" y2="177.8" width="0.1524" layer="91"/>
 <label x="43.18" y="177.8" size="1.778" layer="95"/>
@@ -16347,7 +16347,7 @@ voltage to VDDB</text>
 <pinref part="TP8" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="PB2" class="0">
+<net name="MOSI" class="0">
 <segment>
 <wire x1="63.5" y1="175.26" x2="83.82" y2="175.26" width="0.1524" layer="91"/>
 <label x="68.58" y="175.26" size="1.778" layer="95"/>
@@ -16355,7 +16355,7 @@ voltage to VDDB</text>
 <pinref part="TP7" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="PB1" class="0">
+<net name="SCK" class="0">
 <segment>
 <wire x1="55.88" y1="175.26" x2="27.94" y2="175.26" width="0.1524" layer="91"/>
 <label x="43.18" y="175.26" size="1.778" layer="95"/>
@@ -18448,7 +18448,7 @@ AH1815-P-BDI-ND</text>
 <pinref part="P+33" gate="1" pin="+5V"/>
 </segment>
 </net>
-<net name="V-THERMISTOR0" class="0">
+<net name="THERMISTOR0" class="2">
 <segment>
 <label x="177.8" y="154.94" size="1.778" layer="95"/>
 <wire x1="167.64" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
@@ -18568,7 +18568,7 @@ AH1815-P-BDI-ND</text>
 <label x="106.68" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="V-THERMISTOR1" class="0">
+<net name="THERMISTOR1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="R23" gate="G$1" pin="1"/>
