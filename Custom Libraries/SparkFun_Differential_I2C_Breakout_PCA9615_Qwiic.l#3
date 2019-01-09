@@ -18546,7 +18546,7 @@ Note, you may also be interested in the "MAGJACK" version of this. It is basical
 </device>
 </devices>
 </deviceset>
-<deviceset name="PCA9615" prefix="U">
+<deviceset name="SPARKFUN-IC-COMMS_PCA9615" prefix="U">
 <description>&lt;h3&gt;Differential I2C Bus Buffer&lt;/h3&gt;
 
 &lt;p&gt;&lt;a href="https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -18554,21 +18554,23 @@ Note, you may also be interested in the "MAGJACK" version of this. It is basical
 <gate name="G$1" symbol="PCA9615" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SPARKFUN-IC-COMMS_TSSOP10">
+<device name="PCA9615" package="SPARKFUN-IC-COMMS_TSSOP10">
 <connects>
 <connect gate="G$1" pin="DSCL+" pad="7"/>
 <connect gate="G$1" pin="DSCL-" pad="6"/>
 <connect gate="G$1" pin="DSDA+" pad="8"/>
 <connect gate="G$1" pin="DSDA-" pad="9"/>
-<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="SCL" pad="4"/>
-<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
 <connect gate="G$1" pin="VDDA" pad="1"/>
 <connect gate="G$1" pin="VDDB" pad="10"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13899" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -862,9 +862,28 @@ Switches electrical signals</description>
 </deviceset>
 <deviceset name="DRV8825CARRIER">
 <gates>
+<gate name="G$1" symbol="DRV8825CARRIER" x="15.24" y="10.16"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="DRV8825CARRIER">
+<connects>
+<connect gate="G$1" pin="1" pad="V-STEPPER"/>
+<connect gate="G$1" pin="10" pad="STEP"/>
+<connect gate="G$1" pin="11" pad="/SLEEP"/>
+<connect gate="G$1" pin="12" pad="/RESET"/>
+<connect gate="G$1" pin="13" pad="M2"/>
+<connect gate="G$1" pin="14" pad="M1"/>
+<connect gate="G$1" pin="15" pad="M0"/>
+<connect gate="G$1" pin="16" pad="/EN"/>
+<connect gate="G$1" pin="2" pad="GND"/>
+<connect gate="G$1" pin="3" pad="B2"/>
+<connect gate="G$1" pin="4" pad="B1"/>
+<connect gate="G$1" pin="5" pad="A1"/>
+<connect gate="G$1" pin="6" pad="A2"/>
+<connect gate="G$1" pin="7" pad="/FLT"/>
+<connect gate="G$1" pin="8" pad="GND1"/>
+<connect gate="G$1" pin="9" pad="DIR"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

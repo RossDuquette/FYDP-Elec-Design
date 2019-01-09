@@ -280,7 +280,7 @@
 <text x="0" y="8.763" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <circle x="0.254" y="0" radius="8.001" width="0.127" layer="21"/>
 </package>
-<package name="1X08" urn="urn:adsk.eagle:footprint:37760/1" locally_modified="yes">
+<package name="DRV8825CARRIER" urn="urn:adsk.eagle:footprint:37760/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole -8 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:8&lt;/li&gt;
@@ -339,14 +339,14 @@
 <wire x1="17.145" y1="1.27" x2="16.51" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="16.51" y1="-0.635" x2="17.145" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="18.415" y1="-1.27" x2="17.145" y2="-1.27" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="7" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="8" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="V-STEPPER" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="B2" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="B1" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A1" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A2" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="/FLT" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND1" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
 <rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
 <rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
@@ -407,14 +407,14 @@
 <wire x1="0.635" y1="11.43" x2="1.27" y2="12.065" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="13.335" x2="0.635" y2="13.97" width="0.2032" layer="21"/>
 <wire x1="-0.635" y1="13.97" x2="0.635" y2="13.97" width="0.2032" layer="21"/>
-<pad name="9" x="17.78" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="10" x="15.24" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="11" x="12.7" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="12" x="10.16" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="13" x="7.62" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="14" x="5.08" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="15" x="2.54" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="16" x="0" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="DIR" x="17.78" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="STEP" x="15.24" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="/SLEEP" x="12.7" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="/RESET" x="10.16" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="M2" x="7.62" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="M1" x="5.08" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="M0" x="2.54" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="/EN" x="0" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
 <rectangle x1="2.286" y1="12.446" x2="2.794" y2="12.954" layer="51" rot="R180"/>
 <rectangle x1="4.826" y1="12.446" x2="5.334" y2="12.954" layer="51" rot="R180"/>
 <rectangle x1="7.366" y1="12.446" x2="7.874" y2="12.954" layer="51" rot="R180"/>
@@ -854,6 +854,17 @@ Switches electrical signals</description>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8825CARRIER">
+<gates>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
