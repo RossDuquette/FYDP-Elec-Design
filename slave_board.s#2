@@ -16148,8 +16148,6 @@ Need heat-sinking or forced air
 <text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip
 but not too close that cant solder</text>
 <text x="320.04" y="175.26" size="1.778" layer="91">OUTPUT</text>
-<text x="363.22" y="208.28" size="1.778" layer="91">/RESET</text>
-<text x="363.22" y="205.74" size="1.778" layer="91">/SLEEP</text>
 <text x="335.28" y="195.58" size="1.778" layer="91">PWM ON STEP TURN THE MOTOR</text>
 <text x="200.66" y="215.9" size="1.778" layer="91">solder over to provide better conduction</text>
 <text x="266.7" y="101.6" size="1.778" layer="91">drive voltage = 10V</text>
@@ -16558,11 +16556,9 @@ but not too close that cant solder</text>
 </net>
 <net name="+5V" class="3">
 <segment>
-<label x="337.82" y="208.28" size="1.778" layer="95"/>
 <wire x1="330.2" y1="208.28" x2="360.68" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="P+35" gate="1" pin="+5V"/>
 <wire x1="360.68" y1="213.36" x2="360.68" y2="208.28" width="0.1524" layer="91"/>
-<label x="337.82" y="205.74" size="1.778" layer="95"/>
 <wire x1="330.2" y1="205.74" x2="360.68" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="205.74" x2="360.68" y2="208.28" width="0.1524" layer="91"/>
 <junction x="360.68" y="208.28"/>

@@ -14089,6 +14089,14 @@ Switches electrical signals</description>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="smoothio" deviceset="DRV8825CARRIER" device=""/>
+<part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="P+18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R23" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value=" 51K"/>
+<part name="C34" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" package3d_urn="urn:adsk.eagle:package:37414/1" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16369,6 +16377,15 @@ but not too close that cant solder</text>
 <attribute name="VALUE" x="314.96" y="195.834" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="314.96" y="221.488" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="P+14" gate="1" x="675.64" y="238.76" smashed="yes">
+<attribute name="VALUE" x="673.1" y="233.68" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+15" gate="1" x="43.18" y="190.5" smashed="yes">
+<attribute name="VALUE" x="40.64" y="185.42" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+17" gate="1" x="43.18" y="114.3" smashed="yes">
+<attribute name="VALUE" x="40.64" y="109.22" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16427,13 +16444,6 @@ but not too close that cant solder</text>
 <pinref part="U1" gate="G$1" pin="STAT3"/>
 <wire x1="63.5" y1="195.58" x2="53.34" y2="195.58" width="0.1524" layer="91"/>
 <label x="53.34" y="195.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STAT1_DIS" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="STAT_DIS"/>
-<wire x1="63.5" y1="185.42" x2="55.88" y2="185.42" width="0.1524" layer="91"/>
-<label x="50.8" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="2">
@@ -16573,6 +16583,19 @@ but not too close that cant solder</text>
 <junction x="226.06" y="30.48"/>
 <pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="231.14" y1="30.48" x2="231.14" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="STAT_DIS"/>
+<pinref part="P+15" gate="1" pin="+5V"/>
+<wire x1="63.5" y1="185.42" x2="43.18" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="185.42" x2="43.18" y2="187.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="STAT_DIS"/>
+<wire x1="63.5" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="P+17" gate="1" pin="+5V"/>
+<wire x1="43.18" y1="111.76" x2="43.18" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="109.22" x2="48.26" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -16908,13 +16931,6 @@ but not too close that cant solder</text>
 <pinref part="U6" gate="G$1" pin="STAT4"/>
 <wire x1="63.5" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
 <label x="50.8" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="STAT2_DIS" class="0">
-<segment>
-<pinref part="U6" gate="G$1" pin="STAT_DIS"/>
-<wire x1="63.5" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
-<label x="50.8" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LIQUID1" class="0">
@@ -17768,6 +17784,24 @@ Need to tune</text>
 <attribute name="NAME" x="179.324" y="152.781" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="179.324" y="147.701" size="1.778" layer="96" font="vector"/>
 </instance>
+<instance part="J1" gate="G$1" x="160.02" y="101.6" smashed="yes">
+<attribute name="VALUE" x="157.48" y="96.774" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="157.48" y="107.188" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="P+18" gate="1" x="170.18" y="124.46" smashed="yes">
+<attribute name="VALUE" x="167.64" y="119.38" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND52" gate="1" x="170.18" y="86.36" smashed="yes">
+<attribute name="VALUE" x="167.64" y="83.82" size="1.778" layer="96"/>
+</instance>
+<instance part="R23" gate="G$1" x="170.18" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="168.656" y="114.3" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="171.704" y="114.3" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+</instance>
+<instance part="C34" gate="G$1" x="177.8" y="99.06" smashed="yes">
+<attribute name="NAME" x="179.324" y="101.981" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="179.324" y="96.901" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17818,8 +17852,13 @@ Need to tune</text>
 <pinref part="R19" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="180.34" x2="68.58" y2="180.34" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="170.18" y1="119.38" x2="170.18" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="P+18" gate="1" pin="+5V"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+</segment>
 </net>
-<net name="V-THERMISTOR" class="2">
+<net name="V-THERMISTOR0" class="2">
 <segment>
 <label x="177.8" y="154.94" size="1.778" layer="95"/>
 <wire x1="167.64" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
@@ -17878,6 +17917,17 @@ Need to tune</text>
 <wire x1="55.88" y1="193.04" x2="55.88" y2="187.96" width="0.1524" layer="91"/>
 <junction x="55.88" y="187.96"/>
 </segment>
+<segment>
+<pinref part="GND52" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="101.6" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="101.6" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="93.98" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="96.52" x2="177.8" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="93.98" x2="170.18" y2="93.98" width="0.1524" layer="91"/>
+<junction x="170.18" y="93.98"/>
+</segment>
 </net>
 <net name="CAROUSEL_POS" class="0">
 <segment>
@@ -17914,6 +17964,18 @@ Need to tune</text>
 <pinref part="J16" gate="J$1" pin="2"/>
 <wire x1="99.06" y1="142.24" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
 <label x="106.68" y="142.24" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="V-THERMISTOR1" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="109.22" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
+<label x="172.72" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -16148,8 +16148,6 @@ Need heat-sinking or forced air
 <text x="302.26" y="190.5" size="1.778" layer="91">put 47uF capacitor as close as possible to chip
 but not too close that cant solder</text>
 <text x="320.04" y="175.26" size="1.778" layer="91">OUTPUT</text>
-<text x="373.38" y="208.28" size="1.778" layer="91">/RESET</text>
-<text x="373.38" y="205.74" size="1.778" layer="91">/SLEEP</text>
 <text x="335.28" y="195.58" size="1.778" layer="91">PWM ON STEP TURN THE MOTOR</text>
 <text x="200.66" y="215.9" size="1.778" layer="91">solder over to provide better conduction</text>
 <text x="266.7" y="101.6" size="1.778" layer="91">drive voltage = 10V</text>
@@ -16198,8 +16196,8 @@ but not too close that cant solder</text>
 <attribute name="NAME" x="266.7" y="27.94" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="266.7" y="25.4" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="P+35" gate="1" x="370.84" y="215.9" smashed="yes">
-<attribute name="VALUE" x="368.3" y="210.82" size="1.778" layer="96" rot="R90"/>
+<instance part="P+35" gate="1" x="360.68" y="215.9" smashed="yes">
+<attribute name="VALUE" x="358.14" y="210.82" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP19" gate="G$1" x="246.38" y="213.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="243.84" y="212.979" size="1.778" layer="95" font="vector" rot="R180"/>
@@ -16558,14 +16556,14 @@ but not too close that cant solder</text>
 </net>
 <net name="+5V" class="3">
 <segment>
-<label x="347.98" y="208.28" size="1.778" layer="95"/>
-<wire x1="340.36" y1="208.28" x2="370.84" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="208.28" x2="360.68" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="P+35" gate="1" pin="+5V"/>
-<wire x1="370.84" y1="213.36" x2="370.84" y2="208.28" width="0.1524" layer="91"/>
-<label x="347.98" y="205.74" size="1.778" layer="95"/>
-<wire x1="340.36" y1="205.74" x2="370.84" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="370.84" y1="205.74" x2="370.84" y2="208.28" width="0.1524" layer="91"/>
-<junction x="370.84" y="208.28"/>
+<wire x1="360.68" y1="213.36" x2="360.68" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="205.74" x2="360.68" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="205.74" x2="360.68" y2="208.28" width="0.1524" layer="91"/>
+<junction x="360.68" y="208.28"/>
+<pinref part="U$1" gate="G$1" pin="11"/>
+<pinref part="U$1" gate="G$1" pin="12"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -16666,32 +16664,37 @@ but not too close that cant solder</text>
 </net>
 <net name="/EN" class="0">
 <segment>
-<wire x1="340.36" y1="218.44" x2="358.14" y2="218.44" width="0.1524" layer="91"/>
-<label x="340.36" y="218.44" size="1.778" layer="95"/>
+<wire x1="330.2" y1="218.44" x2="347.98" y2="218.44" width="0.1524" layer="91"/>
+<label x="330.2" y="218.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="16"/>
 </segment>
 </net>
 <net name="M0" class="0">
 <segment>
-<wire x1="340.36" y1="215.9" x2="358.14" y2="215.9" width="0.1524" layer="91"/>
-<label x="340.36" y="215.9" size="1.778" layer="95"/>
+<wire x1="330.2" y1="215.9" x2="347.98" y2="215.9" width="0.1524" layer="91"/>
+<label x="330.2" y="215.9" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="15"/>
 </segment>
 </net>
 <net name="M1" class="0">
 <segment>
-<wire x1="340.36" y1="213.36" x2="358.14" y2="213.36" width="0.1524" layer="91"/>
-<label x="340.36" y="213.36" size="1.778" layer="95"/>
+<wire x1="330.2" y1="213.36" x2="347.98" y2="213.36" width="0.1524" layer="91"/>
+<label x="330.2" y="213.36" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="14"/>
 </segment>
 </net>
 <net name="M2" class="0">
 <segment>
-<wire x1="340.36" y1="210.82" x2="358.14" y2="210.82" width="0.1524" layer="91"/>
-<label x="340.36" y="210.82" size="1.778" layer="95"/>
+<wire x1="330.2" y1="210.82" x2="347.98" y2="210.82" width="0.1524" layer="91"/>
+<label x="330.2" y="210.82" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="13"/>
 </segment>
 </net>
 <net name="STEP" class="0">
 <segment>
-<wire x1="340.36" y1="203.2" x2="358.14" y2="203.2" width="0.1524" layer="91"/>
-<label x="340.36" y="203.2" size="1.778" layer="95"/>
+<wire x1="330.2" y1="203.2" x2="347.98" y2="203.2" width="0.1524" layer="91"/>
+<label x="330.2" y="203.2" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="BLENDER1_EN" class="0">
@@ -16834,8 +16837,9 @@ but not too close that cant solder</text>
 </net>
 <net name="DIR" class="2">
 <segment>
-<wire x1="340.36" y1="200.66" x2="358.14" y2="200.66" width="0.1524" layer="91"/>
-<label x="340.36" y="200.66" size="1.778" layer="95"/>
+<wire x1="330.2" y1="200.66" x2="347.98" y2="200.66" width="0.1524" layer="91"/>
+<label x="330.2" y="200.66" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="B2" class="0">

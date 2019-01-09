@@ -21523,6 +21523,7 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -23364,9 +23365,11 @@ may need a way to get gate voltage to &gt;10V
 Flyback diode = SK520TR</text>
 <text x="238.76" y="88.9" size="1.778" layer="91">make sure to do quick thermal calculations for LS switch</text>
 <text x="279.4" y="241.3" size="1.778" layer="91">for Pololu: https://www.pololu.com/product/2133/specs
+Need heat-sinking or forced air
 
-carousel and cup dispense. perhaps some way to switch between 2 different stepper wires.
-so we dont need 2 different stepper drivers</text>
+carousel and cup dispense:
+Motor outputs go to relay board (4 relays) with carousel and cup dispense steppers attached</text>
+<text x="304.8" y="195.58" size="1.778" layer="91">put 47uF capacitor as close as possible to chip</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
@@ -23409,9 +23412,9 @@ so we dont need 2 different stepper drivers</text>
 <attribute name="NAME" x="77.2414" y="67.31" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="74.422" y="64.77" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C15" gate="G$1" x="256.54" y="228.6" smashed="yes">
-<attribute name="NAME" x="257.556" y="229.235" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="257.556" y="224.409" size="1.778" layer="96" font="vector"/>
+<instance part="C15" gate="G$1" x="322.58" y="220.98" smashed="yes">
+<attribute name="NAME" x="323.596" y="221.615" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="323.596" y="216.789" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="J1" gate="G$1" x="292.1" y="213.36" smashed="yes">
 <attribute name="VALUE" x="287.02" y="200.914" size="1.778" layer="96" font="vector"/>
@@ -23429,6 +23432,9 @@ so we dont need 2 different stepper drivers</text>
 </instance>
 <instance part="GND28" gate="1" x="360.68" y="203.2" smashed="yes">
 <attribute name="VALUE" x="358.14" y="200.66" size="1.778" layer="96"/>
+</instance>
+<instance part="GND29" gate="1" x="322.58" y="210.82" smashed="yes">
+<attribute name="VALUE" x="320.04" y="208.28" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -23593,6 +23599,11 @@ so we dont need 2 different stepper drivers</text>
 <pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C15" gate="G$1" pin="-"/>
+<pinref part="GND29" gate="1" pin="GND"/>
+<wire x1="322.58" y1="213.36" x2="322.58" y2="215.9" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="CURR_SENS" class="0">
 <segment>
@@ -23658,8 +23669,9 @@ so we dont need 2 different stepper drivers</text>
 <net name="V-MOTOR" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="8"/>
-<wire x1="297.18" y1="223.52" x2="309.88" y2="223.52" width="0.1524" layer="91"/>
 <label x="299.72" y="223.52" size="1.778" layer="95"/>
+<pinref part="C15" gate="G$1" pin="+"/>
+<wire x1="322.58" y1="223.52" x2="297.18" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="B2" class="0">
