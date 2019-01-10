@@ -16215,7 +16215,8 @@ by exp-lbrs.ulp</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.2032" drill="0.4064">
+<clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="power" width="0.635" drill="0.4064">
 </class>
@@ -16456,8 +16457,6 @@ by exp-lbrs.ulp</description>
 <part name="C4" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="100n"/>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="YELLOW"/>
-<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FD4" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
 <part name="Y1" library="ABLS-16.000MHZ-B4-T" deviceset="ABLS-16.000MHZ-B4-T" device=""/>
@@ -16465,7 +16464,6 @@ by exp-lbrs.ulp</description>
 <part name="C8" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="15PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="15pF"/>
 <part name="C9" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="15PF" device="-0402-50V-5%" package3d_urn="urn:adsk.eagle:package:37413/1" value="15pF"/>
 <part name="R16" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
-<part name="R17" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="R18" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="10KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="10k"/>
 <part name="C32" library="SmartPrj" deviceset="C-EU" device="0603-RND" value="100n"/>
 <part name="C33" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="4.7UF" device="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="4.7uF"/>
@@ -16532,11 +16530,9 @@ Cut trace to apply separate
 voltage to VDDB</text>
 <text x="309.88" y="190.5" size="1.778" layer="97">VDD_A = I2C-bus side power supply (2.3 V to 5.5 V)</text>
 <text x="307.34" y="187.96" size="1.778" layer="97">VDD_B = differential side power supply (3.0 V to 5.5 V)</text>
-<text x="223.52" y="165.1" size="1.6764" layer="91">pwm</text>
 <text x="214.63" y="155.575" size="1.6764" layer="91">(MISO)</text>
 <text x="214.63" y="150.495" size="1.6764" layer="91">(SCK)</text>
 <text x="214.63" y="153.035" size="1.6764" layer="91">(MOSI)</text>
-<text x="236.22" y="182.88" size="1.778" layer="91">DONT PUT PWM PIN WITH LED</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -16595,13 +16591,6 @@ voltage to VDDB</text>
 <instance part="GND23" gate="1" x="22.86" y="12.7" smashed="yes">
 <attribute name="VALUE" x="20.32" y="10.16" size="1.778" layer="96"/>
 </instance>
-<instance part="L" gate="G$1" x="241.3" y="200.66" smashed="yes" rot="R90">
-<attribute name="NAME" x="245.872" y="204.216" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="245.872" y="206.375" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND13" gate="1" x="251.46" y="200.66" smashed="yes" rot="R90">
-<attribute name="VALUE" x="254" y="198.12" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="GND20" gate="1" x="71.12" y="180.34" smashed="yes" rot="R270">
 <attribute name="VALUE" x="68.58" y="182.88" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -16625,10 +16614,6 @@ voltage to VDDB</text>
 <instance part="R16" gate="G$1" x="231.14" y="210.82" smashed="yes">
 <attribute name="NAME" x="231.14" y="212.344" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="231.14" y="209.296" size="1.778" layer="96" font="vector" align="top-center"/>
-</instance>
-<instance part="R17" gate="G$1" x="231.14" y="200.66" smashed="yes">
-<attribute name="NAME" x="231.14" y="202.184" size="1.778" layer="95" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="231.14" y="199.136" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="R18" gate="G$1" x="22.86" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="21.336" y="35.56" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -16808,11 +16793,6 @@ voltage to VDDB</text>
 <wire x1="22.86" y1="17.78" x2="22.86" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="GND23" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<wire x1="248.92" y1="200.66" x2="246.38" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="L" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
@@ -17040,13 +17020,6 @@ voltage to VDDB</text>
 <pinref part="IC3" gate="1" pin="(RXD0/PCIN8)PE0"/>
 </segment>
 </net>
-<net name="N$2" class="0">
-<segment>
-<wire x1="238.76" y1="200.66" x2="236.22" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="L" gate="G$1" pin="A"/>
-<pinref part="R17" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="DIR" class="2">
 <segment>
 <wire x1="205.74" y1="162.56" x2="223.52" y2="162.56" width="0.1524" layer="91"/>
@@ -17080,20 +17053,6 @@ voltage to VDDB</text>
 <wire x1="220.98" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 <label x="207.645" y="109.855" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="(TXD1/INT3)PD3"/>
-</segment>
-</net>
-<net name="CUP_SENSE0" class="0">
-<segment>
-<wire x1="121.92" y1="38.1" x2="134.62" y2="38.1" width="0.1524" layer="91"/>
-<label x="116.84" y="38.735" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PH0(RXD2)"/>
-</segment>
-</net>
-<net name="CUP_SENSE1" class="0">
-<segment>
-<wire x1="121.92" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
-<label x="116.84" y="41.275" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PH1(TXD2)"/>
 </segment>
 </net>
 <net name="COOLANT_EN" class="0">
@@ -17230,15 +17189,9 @@ voltage to VDDB</text>
 </net>
 <net name="STEP" class="0">
 <segment>
-<wire x1="231.14" y1="193.04" x2="231.14" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="165.1" x2="231.14" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="165.1" x2="223.52" y2="165.1" width="0.1524" layer="91"/>
 <label x="208.28" y="165.735" size="1.6764" layer="95"/>
 <pinref part="IC3" gate="1" pin="(OC0A/OC1C/PCINT7)PB7"/>
-<wire x1="215.9" y1="200.66" x2="226.06" y2="200.66" width="0.1524" layer="91"/>
-<label x="218.44" y="200.66" size="1.778" layer="95"/>
-<wire x1="231.14" y1="193.04" x2="215.9" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="193.04" x2="215.9" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="XTAL2" class="0">
@@ -17323,6 +17276,20 @@ voltage to VDDB</text>
 <wire x1="114.3" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
 <label x="115.57" y="114.935" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="PL3(OC5A)"/>
+</segment>
+</net>
+<net name="CUP_SENSE0" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(AD6)PA6"/>
+<wire x1="205.74" y1="185.42" x2="218.44" y2="185.42" width="0.1524" layer="91"/>
+<label x="208.28" y="185.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CUP_SENSE1" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(AD7)PA7"/>
+<wire x1="205.74" y1="187.96" x2="218.44" y2="187.96" width="0.1524" layer="91"/>
+<label x="208.28" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -19750,20 +19717,6 @@ AH1815-P-BDI-ND</text>
 <pinref part="P+33" gate="1" pin="+5V"/>
 </segment>
 </net>
-<net name="THERMISTOR0" class="2">
-<segment>
-<label x="177.8" y="154.94" size="1.778" layer="95"/>
-<wire x1="167.64" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="154.94" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="154.94" x2="198.12" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="160.02" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
-<junction x="170.18" y="154.94"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<junction x="177.8" y="154.94"/>
-</segment>
-</net>
 <net name="GND" class="2">
 <segment>
 <pinref part="J13" gate="J$1" pin="1"/>
@@ -19872,14 +19825,16 @@ AH1815-P-BDI-ND</text>
 </net>
 <net name="THERMISTOR1" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="109.22" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="1"/>
-<wire x1="170.18" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
-<label x="172.72" y="104.14" size="1.778" layer="95"/>
+<label x="177.8" y="154.94" size="1.778" layer="95"/>
+<wire x1="167.64" y1="154.94" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="154.94" x2="177.8" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="154.94" x2="198.12" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="160.02" x2="170.18" y2="154.94" width="0.1524" layer="91"/>
+<junction x="170.18" y="154.94"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<junction x="177.8" y="154.94"/>
 </segment>
 </net>
 <net name="PIVOT_ENC_B" class="0">
@@ -19901,6 +19856,18 @@ AH1815-P-BDI-ND</text>
 <pinref part="J26" gate="J$1" pin="3"/>
 <wire x1="88.9" y1="78.74" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
 <label x="91.44" y="78.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="THERMISTOR0" class="2">
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="109.22" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="1"/>
+<wire x1="170.18" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
+<label x="172.72" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
