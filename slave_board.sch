@@ -16365,11 +16365,9 @@ by exp-lbrs.ulp</description>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="220OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="220"/>
 <part name="GND50" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="220OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="220"/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="smoothio" deviceset="PHB45NQ15T" device=""/>
@@ -16400,7 +16398,6 @@ by exp-lbrs.ulp</description>
 <part name="GND75" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="TP1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3X5" package3d_urn="urn:adsk.eagle:package:38285/1"/>
 <part name="TP2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
 <part name="TP3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
 <part name="TP4" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="TEST-POINT" device="3" package3d_urn="urn:adsk.eagle:package:38286/1"/>
@@ -17203,60 +17200,32 @@ voltage to VDDB</text>
 <label x="284.48" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FROZEN1_EN" class="0">
-<segment>
-<wire x1="134.62" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
-<label x="115.57" y="107.315" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL0(ICP4)"/>
-</segment>
-</net>
-<net name="FROZEN2_EN" class="0">
+<net name="FROZEN3_EN" class="0">
 <segment>
 <wire x1="114.3" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
 <label x="115.57" y="109.855" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="PL1(ICP5)"/>
 </segment>
 </net>
-<net name="FROZEN3_EN" class="0">
-<segment>
-<wire x1="134.62" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
-<label x="115.57" y="112.395" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL2(T5)"/>
-</segment>
-</net>
 <net name="FROZEN4_EN" class="0">
 <segment>
-<wire x1="114.3" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<label x="115.57" y="114.935" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL3(OC5A)"/>
+<wire x1="134.62" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
+<label x="115.57" y="107.315" size="1.778" layer="95"/>
+<pinref part="IC3" gate="1" pin="PL0(ICP4)"/>
 </segment>
 </net>
 <net name="LIQUID1_EN" class="0">
 <segment>
-<wire x1="134.62" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
-<label x="115.57" y="117.475" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL4(OC5B)"/>
+<wire x1="134.62" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
+<label x="115.57" y="125.095" size="1.778" layer="95"/>
+<pinref part="IC3" gate="1" pin="PL7"/>
 </segment>
 </net>
 <net name="LIQUID2_EN" class="0">
 <segment>
-<wire x1="114.3" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
-<label x="115.57" y="120.015" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL5(OC5C)"/>
-</segment>
-</net>
-<net name="LIQUID3_EN" class="0">
-<segment>
 <wire x1="134.62" y1="121.92" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
 <label x="115.57" y="122.555" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="PL6"/>
-</segment>
-</net>
-<net name="POWDER1_EN" class="0">
-<segment>
-<wire x1="134.62" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
-<label x="115.57" y="125.095" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL7"/>
 </segment>
 </net>
 <net name="STEP" class="0">
@@ -17326,6 +17295,34 @@ voltage to VDDB</text>
 <wire x1="223.52" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="1" pin="(OC3C/INT5)PE5"/>
 <label x="207.01" y="92.075" size="1.6764" layer="95"/>
+</segment>
+</net>
+<net name="LIQUID3_EN" class="0">
+<segment>
+<wire x1="114.3" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
+<label x="115.57" y="120.015" size="1.778" layer="95"/>
+<pinref part="IC3" gate="1" pin="PL5(OC5C)"/>
+</segment>
+</net>
+<net name="POWDER1_EN" class="0">
+<segment>
+<wire x1="134.62" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
+<label x="115.57" y="117.475" size="1.778" layer="95"/>
+<pinref part="IC3" gate="1" pin="PL4(OC5B)"/>
+</segment>
+</net>
+<net name="FROZEN2_EN" class="0">
+<segment>
+<wire x1="134.62" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
+<label x="115.57" y="112.395" size="1.778" layer="95"/>
+<pinref part="IC3" gate="1" pin="PL2(T5)"/>
+</segment>
+</net>
+<net name="FROZEN1_EN" class="0">
+<segment>
+<wire x1="114.3" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+<label x="115.57" y="114.935" size="1.778" layer="95"/>
+<pinref part="IC3" gate="1" pin="PL3(OC5A)"/>
 </segment>
 </net>
 </nets>
@@ -18132,9 +18129,6 @@ but not too close that cant solder</text>
 <instance part="GND34" gate="1" x="287.02" y="60.96" smashed="yes">
 <attribute name="VALUE" x="284.48" y="58.42" size="1.778" layer="96"/>
 </instance>
-<instance part="P+16" gate="1" x="254" y="76.2" smashed="yes">
-<attribute name="VALUE" x="251.46" y="71.12" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R10" gate="G$1" x="223.52" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="221.996" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="225.044" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
@@ -18144,9 +18138,6 @@ but not too close that cant solder</text>
 </instance>
 <instance part="GND51" gate="1" x="287.02" y="96.52" smashed="yes">
 <attribute name="VALUE" x="284.48" y="93.98" size="1.778" layer="96"/>
-</instance>
-<instance part="P+30" gate="1" x="254" y="111.76" smashed="yes">
-<attribute name="VALUE" x="251.46" y="106.68" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R12" gate="G$1" x="223.52" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="221.996" y="96.52" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -18479,16 +18470,6 @@ but not too close that cant solder</text>
 <pinref part="P+29" gate="1" pin="+12V"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 </segment>
-<segment>
-<wire x1="243.84" y1="73.66" x2="254" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="P+16" gate="1" pin="+12V"/>
-<pinref part="U$2" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="243.84" y1="109.22" x2="254" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="P+30" gate="1" pin="+12V"/>
-<pinref part="U$4" gate="G$1" pin="4"/>
-</segment>
 </net>
 <net name="V-STEPPER" class="0">
 <segment>
@@ -18637,6 +18618,16 @@ but not too close that cant solder</text>
 <wire x1="40.64" y1="160.02" x2="30.48" y2="160.02" width="0.1524" layer="91"/>
 <junction x="40.64" y="160.02"/>
 <label x="40.64" y="160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="4"/>
+<wire x1="243.84" y1="109.22" x2="264.16" y2="109.22" width="0.1524" layer="91"/>
+<label x="248.92" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="4"/>
+<wire x1="243.84" y1="73.66" x2="264.16" y2="73.66" width="0.1524" layer="91"/>
+<label x="248.92" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HEATPUMP_EN" class="0">
@@ -20013,10 +20004,6 @@ Id = -8.8A continuous</text>
 <attribute name="NAME" x="66.04548125" y="103.492659375" size="1.272740625" layer="95" rot="R180"/>
 <attribute name="VALUE" x="66.04808125" y="116.86423125" size="1.274040625" layer="96" rot="R180"/>
 </instance>
-<instance part="TP1" gate="G$1" x="170.18" y="106.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="167.64" y="104.14" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="172.72" y="104.14" size="1.778" layer="96" font="vector" rot="R90"/>
-</instance>
 <instance part="TP2" gate="G$1" x="220.98" y="139.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="218.44" y="137.16" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="223.52" y="137.16" size="1.778" layer="96" font="vector" rot="R90"/>
@@ -20140,8 +20127,7 @@ Id = -8.8A continuous</text>
 <label x="147.32" y="106.68" size="1.778" layer="95"/>
 <wire x1="144.78" y1="106.68" x2="152.4" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="106.68" x2="162.56" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="106.68" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="106.68" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="106.68" x2="177.8" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="105.41" x2="172.72" y2="106.68" width="0.1524" layer="91"/>
 <junction x="172.72" y="106.68"/>
@@ -20151,8 +20137,6 @@ Id = -8.8A continuous</text>
 <junction x="152.4" y="106.68"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="D4" gate="G$1" pin="C"/>
-<pinref part="TP1" gate="G$1" pin="1"/>
-<junction x="170.18" y="106.68"/>
 <pinref part="C20" gate="G$1" pin="+"/>
 <pinref part="C21" gate="G$1" pin="+"/>
 <pinref part="C19" gate="G$1" pin="+"/>
