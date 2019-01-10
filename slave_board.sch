@@ -16900,37 +16900,37 @@ voltage to VDDB</text>
 </net>
 <net name="CAROUSEL_POS" class="0">
 <segment>
-<wire x1="223.52" y1="55.88" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
-<label x="207.01" y="58.42" size="1.778" layer="95" rot="MR180"/>
-<pinref part="IC3" gate="1" pin="(ADC0)PF0"/>
+<wire x1="223.52" y1="60.96" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
+<label x="227.33" y="60.96" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC3" gate="1" pin="(ADC2)PF2"/>
 </segment>
 </net>
 <net name="CUP_MASS1" class="0">
 <segment>
-<wire x1="223.52" y1="60.96" x2="205.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="207.01" y="63.5" size="1.778" layer="95" rot="MR180"/>
-<pinref part="IC3" gate="1" pin="(ADC2)PF2"/>
+<wire x1="223.52" y1="68.58" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
+<label x="222.25" y="68.58" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC3" gate="1" pin="(ADC5/TMS)PF5"/>
 </segment>
 </net>
 <net name="CUP_MASS0" class="0">
 <segment>
-<wire x1="205.74" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
-<label x="207.01" y="60.96" size="1.778" layer="95" rot="MR180"/>
-<pinref part="IC3" gate="1" pin="(ADC1)PF1"/>
+<wire x1="205.74" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<label x="222.25" y="66.04" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC3" gate="1" pin="(ADC4/TCK)PF4"/>
 </segment>
 </net>
 <net name="THERMISTOR0" class="2">
 <segment>
-<wire x1="223.52" y1="66.04" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
-<label x="207.01" y="68.58" size="1.778" layer="95" rot="MR180"/>
-<pinref part="IC3" gate="1" pin="(ADC4/TCK)PF4"/>
+<wire x1="223.52" y1="55.88" x2="205.74" y2="55.88" width="0.1524" layer="91"/>
+<label x="224.79" y="55.88" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC3" gate="1" pin="(ADC0)PF0"/>
 </segment>
 </net>
 <net name="THERMISTOR1" class="0">
 <segment>
-<wire x1="205.74" y1="68.58" x2="223.52" y2="68.58" width="0.1524" layer="91"/>
-<label x="207.01" y="71.12" size="1.778" layer="95" rot="MR180"/>
-<pinref part="IC3" gate="1" pin="(ADC5/TMS)PF5"/>
+<wire x1="205.74" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
+<label x="224.79" y="58.42" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC3" gate="1" pin="(ADC1)PF1"/>
 </segment>
 </net>
 <net name="SDA" class="0">
