@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -3660,8 +3660,8 @@ design rules under a new name.</description>
 <wire x1="104.21" y1="9.825" x2="105.01" y2="9.825" width="0.635" layer="1"/>
 <polygon width="0.254" layer="1" thermals="no">
 <vertex x="103.378" y="9.652"/>
-<vertex x="103.378" y="3.81"/>
-<vertex x="104.14" y="3.048"/>
+<vertex x="103.378" y="4.445"/>
+<vertex x="104.775" y="3.048"/>
 <vertex x="105.156" y="3.048"/>
 <vertex x="105.664" y="3.556"/>
 <vertex x="105.664" y="8.128"/>
@@ -3682,10 +3682,8 @@ design rules under a new name.</description>
 <vertex x="98.425" y="8.255"/>
 <vertex x="98.425" y="3.81"/>
 <vertex x="99.06" y="3.175"/>
-<vertex x="100.203" y="3.175"/>
-<vertex x="100.584" y="3.556"/>
-<vertex x="100.584" y="4.064"/>
-<vertex x="102.743" y="6.223"/>
+<vertex x="100.076" y="3.175"/>
+<vertex x="102.743" y="5.842"/>
 <vertex x="102.743" y="9.779"/>
 </polygon>
 </signal>
@@ -3735,7 +3733,20 @@ design rules under a new name.</description>
 <contactref element="J18" pad="8"/>
 <wire x1="134.245" y1="9.825" x2="135.045" y2="9.825" width="0.635" layer="1"/>
 <wire x1="135.045" y1="9.825" x2="135.845" y2="9.825" width="0.635" layer="1"/>
-<wire x1="135.845" y1="9.825" x2="140.97" y2="3.175" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1" thermals="no">
+<vertex x="134.112" y="9.652"/>
+<vertex x="134.112" y="8.636"/>
+<vertex x="135.001" y="7.747"/>
+<vertex x="136.398" y="7.747"/>
+<vertex x="140.081" y="4.064"/>
+<vertex x="140.081" y="3.429"/>
+<vertex x="140.335" y="3.175"/>
+<vertex x="141.605" y="3.175"/>
+<vertex x="141.986" y="3.556"/>
+<vertex x="141.986" y="7.239"/>
+<vertex x="139.319" y="9.906"/>
+<vertex x="134.366" y="9.906"/>
+</polygon>
 </signal>
 <signal name="LIQUID3">
 <contactref element="U6" pad="16"/>
@@ -3744,7 +3755,17 @@ design rules under a new name.</description>
 <contactref element="J18" pad="4"/>
 <wire x1="129.445" y1="9.825" x2="130.245" y2="9.825" width="0.635" layer="1"/>
 <wire x1="130.245" y1="9.825" x2="131.045" y2="9.825" width="0.635" layer="1"/>
-<wire x1="130.81" y1="3.175" x2="131.045" y2="9.825" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1" thermals="no">
+<vertex x="129.413" y="9.652"/>
+<vertex x="129.413" y="4.445"/>
+<vertex x="130.302" y="3.556"/>
+<vertex x="131.191" y="3.556"/>
+<vertex x="131.572" y="3.937"/>
+<vertex x="131.572" y="8.255"/>
+<vertex x="131.572" y="8.509"/>
+<vertex x="131.191" y="8.89"/>
+<vertex x="131.191" y="9.652"/>
+</polygon>
 </signal>
 <signal name="POWDER1">
 <contactref element="U6" pad="15"/>
@@ -3753,17 +3774,15 @@ design rules under a new name.</description>
 <contactref element="J18" pad="2"/>
 <wire x1="127.045" y1="9.825" x2="127.845" y2="9.825" width="0.635" layer="1"/>
 <wire x1="127.845" y1="9.825" x2="128.645" y2="9.825" width="0.635" layer="1"/>
-<wire x1="125.73" y1="3.175" x2="127.045" y2="9.825" width="0" layer="19" extent="1-1"/>
-<polygon width="0.254" layer="1">
-<vertex x="127.635" y="9.525"/>
-<vertex x="125.73" y="9.525"/>
+<polygon width="0.254" layer="1" thermals="no">
+<vertex x="128.143" y="9.906"/>
+<vertex x="126.111" y="9.906"/>
 <vertex x="124.46" y="8.255"/>
 <vertex x="124.46" y="4.445"/>
 <vertex x="125.095" y="3.81"/>
 <vertex x="126.365" y="3.81"/>
-<vertex x="128.905" y="6.35"/>
-<vertex x="128.905" y="8.89"/>
-<vertex x="128.27" y="9.525"/>
+<vertex x="128.778" y="6.223"/>
+<vertex x="128.778" y="9.271"/>
 </polygon>
 </signal>
 <signal name="LIQUID2">
@@ -3773,7 +3792,22 @@ design rules under a new name.</description>
 <contactref element="J18" pad="6"/>
 <wire x1="131.845" y1="9.825" x2="132.645" y2="9.825" width="0.635" layer="1"/>
 <wire x1="132.645" y1="9.825" x2="133.445" y2="9.825" width="0.635" layer="1"/>
-<wire x1="133.445" y1="9.825" x2="135.89" y2="3.175" width="0" layer="19" extent="1-1"/>
+<polygon width="0.254" layer="1" thermals="no">
+<vertex x="131.826" y="9.017"/>
+<vertex x="132.334" y="8.509"/>
+<vertex x="132.334" y="5.334"/>
+<vertex x="132.842" y="4.826"/>
+<vertex x="134.112" y="4.826"/>
+<vertex x="135.382" y="3.556"/>
+<vertex x="136.525" y="3.556"/>
+<vertex x="136.779" y="3.81"/>
+<vertex x="136.779" y="6.35"/>
+<vertex x="136.017" y="7.112"/>
+<vertex x="134.874" y="7.112"/>
+<vertex x="133.604" y="8.382"/>
+<vertex x="133.604" y="9.652"/>
+<vertex x="131.826" y="9.652"/>
+</polygon>
 </signal>
 <signal name="BLENDER1-" class="1">
 <contactref element="J9" pad="P$2"/>
