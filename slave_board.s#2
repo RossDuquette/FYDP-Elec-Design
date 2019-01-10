@@ -17782,6 +17782,17 @@ need 3.5mm diameter</text>
 <pinref part="GND61" gate="1" pin="GND"/>
 <wire x1="48.26" y1="104.14" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="124.46" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="-"/>
+<wire x1="132.08" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="132.08" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<junction x="132.08" y="132.08"/>
+<wire x1="124.46" y1="132.08" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<label x="124.46" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="V-12V_PROT" class="1">
 <segment>
@@ -17974,18 +17985,6 @@ need 3.5mm diameter</text>
 <label x="81.28" y="215.9" size="1.778" layer="95"/>
 <pinref part="U7" gate="A" pin="OUT"/>
 <wire x1="96.52" y1="215.9" x2="81.28" y2="215.9" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="124.46" y1="132.08" x2="132.08" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="C25" gate="G$1" pin="-"/>
-<wire x1="132.08" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="132.08" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<junction x="132.08" y="132.08"/>
-<wire x1="124.46" y1="132.08" x2="124.46" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C24" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PIVOT_OUT_A" class="1">
