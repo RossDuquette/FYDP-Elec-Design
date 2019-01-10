@@ -36,9 +36,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -187,20 +187,33 @@
 <package name="PHB45NQ15T">
 <smd name="1" x="-2.54" y="0" dx="3.0988" dy="1.2954" layer="1" rot="R90"/>
 <smd name="3" x="2.54" y="0" dx="3.0988" dy="1.2954" layer="1" rot="R90"/>
-<smd name="2" x="0" y="10.2489" dx="7.493" dy="8.4074" layer="1"/>
-<polygon width="0.0508" layer="1">
-<vertex x="-5.3086" y="14.4526"/>
-<vertex x="5.3086" y="14.4526"/>
-<vertex x="5.3086" y="13.8938"/>
-<vertex x="5.3086" y="12.192"/>
-<vertex x="4.2418" y="12.192"/>
-<vertex x="-5.3086" y="12.192"/>
+<smd name="2" x="0" y="10.2489" dx="6.985" dy="8.001" layer="1"/>
+<rectangle x1="-5.4102" y1="12.0904" x2="5.4102" y2="14.5542" layer="29"/>
+<polygon width="0.0254" layer="1">
+<vertex x="-3.7592" y="12.1412"/>
+<vertex x="-3.7592" y="6.0452"/>
+<vertex x="3.7592" y="6.0452"/>
+</polygon>
+<polygon width="0.127" layer="1">
+<vertex x="-5.334" y="14.478"/>
+<vertex x="5.3594" y="14.478"/>
+<vertex x="5.3594" y="12.1412"/>
+<vertex x="5.334" y="12.1412"/>
+<vertex x="3.7592" y="12.1412"/>
+<vertex x="3.7592" y="6.0452"/>
+<vertex x="-3.7592" y="6.0452"/>
+<vertex x="-3.7592" y="6.0706"/>
+<vertex x="-3.7592" y="12.1412"/>
+<vertex x="-3.81" y="12.1412"/>
+<vertex x="-5.334" y="12.1412"/>
 </polygon>
 </package>
 <package name="MBR0530">
 <smd name="1" x="-1.778" y="0" dx="1.02108125" dy="0.899159375" layer="1" rot="R90"/>
 <smd name="2" x="1.49098125" y="0" dx="1.02108125" dy="0.899159375" layer="1" rot="R90"/>
 <circle x="-2.032" y="0.889" radius="0.127" width="0.127" layer="21"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-3.81" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="IRFR9024TRPBF">
 <smd name="G" x="-2.286" y="0" dx="2.286" dy="1.397" layer="1" rot="R90"/>
@@ -280,7 +293,7 @@
 <text x="0" y="8.763" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <circle x="0.254" y="0" radius="8.001" width="0.127" layer="21"/>
 </package>
-<package name="1X08" urn="urn:adsk.eagle:footprint:37760/1" locally_modified="yes">
+<package name="DRV8825CARRIER" urn="urn:adsk.eagle:footprint:37760/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole -8 Pin&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:8&lt;/li&gt;
@@ -339,14 +352,14 @@
 <wire x1="17.145" y1="1.27" x2="16.51" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="16.51" y1="-0.635" x2="17.145" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="18.415" y1="-1.27" x2="17.145" y2="-1.27" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="7" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="8" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="V-STEPPER" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="B2" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="B1" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A1" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="A2" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="/FLT" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="GND1" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
 <rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
 <rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
@@ -407,14 +420,14 @@
 <wire x1="0.635" y1="11.43" x2="1.27" y2="12.065" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="13.335" x2="0.635" y2="13.97" width="0.2032" layer="21"/>
 <wire x1="-0.635" y1="13.97" x2="0.635" y2="13.97" width="0.2032" layer="21"/>
-<pad name="9" x="17.78" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="10" x="15.24" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="11" x="12.7" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="12" x="10.16" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="13" x="7.62" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="14" x="5.08" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="15" x="2.54" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
-<pad name="16" x="0" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="DIR" x="17.78" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="STEP" x="15.24" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="/SLEEP" x="12.7" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="/RESET" x="10.16" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="M2" x="7.62" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="M1" x="5.08" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="M0" x="2.54" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="/EN" x="0" y="12.7" drill="1.016" diameter="1.8796" rot="R270"/>
 <rectangle x1="2.286" y1="12.446" x2="2.794" y2="12.954" layer="51" rot="R180"/>
 <rectangle x1="4.826" y1="12.446" x2="5.334" y2="12.954" layer="51" rot="R180"/>
 <rectangle x1="7.366" y1="12.446" x2="7.874" y2="12.954" layer="51" rot="R180"/>
@@ -853,6 +866,36 @@ Switches electrical signals</description>
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRV8825CARRIER">
+<gates>
+<gate name="G$1" symbol="DRV8825CARRIER" x="15.24" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="DRV8825CARRIER">
+<connects>
+<connect gate="G$1" pin="1" pad="V-STEPPER"/>
+<connect gate="G$1" pin="10" pad="STEP"/>
+<connect gate="G$1" pin="11" pad="/SLEEP"/>
+<connect gate="G$1" pin="12" pad="/RESET"/>
+<connect gate="G$1" pin="13" pad="M2"/>
+<connect gate="G$1" pin="14" pad="M1"/>
+<connect gate="G$1" pin="15" pad="M0"/>
+<connect gate="G$1" pin="16" pad="/EN"/>
+<connect gate="G$1" pin="2" pad="GND"/>
+<connect gate="G$1" pin="3" pad="B2"/>
+<connect gate="G$1" pin="4" pad="B1"/>
+<connect gate="G$1" pin="5" pad="A1"/>
+<connect gate="G$1" pin="6" pad="A2"/>
+<connect gate="G$1" pin="7" pad="/FLT"/>
+<connect gate="G$1" pin="8" pad="GND1"/>
+<connect gate="G$1" pin="9" pad="DIR"/>
 </connects>
 <technologies>
 <technology name=""/>
