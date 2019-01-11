@@ -16519,7 +16519,7 @@ by exp-lbrs.ulp</description>
 <text x="327.66" y="236.22" size="1.778" layer="91">Notes:
 Damping resistors on SPI for ICSP?
 10k resistor array?
-wire out I2C in case dI2C doesnt work?
+need filter on current sense output?
 </text>
 <text x="342.9" y="162.56" size="1.778" layer="97">JP1 = VDDA-to-VDDB connection
 Closed by Default
@@ -17298,6 +17298,20 @@ voltage to VDDB</text>
 <pinref part="IC3" gate="1" pin="(AD7)PA7"/>
 <wire x1="205.74" y1="187.96" x2="218.44" y2="187.96" width="0.1524" layer="91"/>
 <label x="208.28" y="187.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CURR_SENS0" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(ADC6/TDO)PF6"/>
+<wire x1="205.74" y1="71.12" x2="223.52" y2="71.12" width="0.1524" layer="91"/>
+<label x="205.74" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CURR_SENS1" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(ADC7/TDI)PF7"/>
+<wire x1="205.74" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
+<label x="205.74" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -18980,7 +18994,6 @@ PUMP</text>
 <text x="205.74" y="213.36" size="1.778" layer="91">BLENDER</text>
 <text x="259.08" y="246.38" size="1.778" layer="91">motor connectors: 1984617
 need 3.5mm diameter</text>
-<text x="111.76" y="185.42" size="1.778" layer="91">current sense needs to be in series with switch, not parallel</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
