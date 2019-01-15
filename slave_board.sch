@@ -1863,11 +1863,6 @@ chip</description>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 </package>
-<package name="FIDUCIA-MOUNT">
-<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
-<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
-<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
-</package>
 <package name="1X08">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
@@ -2255,9 +2250,6 @@ chip</description>
 <pin name="4" x="5.08" y="0" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
 <pin name="5" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="6" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" function="dot" rot="R180"/>
-</symbol>
-<symbol name="FIDUCIAL">
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="PINHD8">
 <wire x1="-6.35" y1="-10.16" x2="1.27" y2="-10.16" width="0.4064" layer="94"/>
@@ -3129,18 +3121,6 @@ chip</description>
 <connect gate="A" pin="5" pad="5"/>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FIDUCIALMOUNT">
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FIDUCIA-MOUNT">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -20359,9 +20339,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="ON" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="FD1" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
-<part name="FD2" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
-<part name="FD3" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
@@ -20371,7 +20348,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="FD4" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
 <part name="Y1" library="ABLS-16.000MHZ-B4-T" deviceset="ABLS-16.000MHZ-B4-T" device=""/>
 <part name="S1" library="FSM2JSMA" deviceset="FSM2JSMA" device=""/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="15pF"/>
@@ -20476,9 +20452,6 @@ voltage to VDDB</text>
 <instance part="P+5" gate="1" x="205.74" y="220.98" smashed="yes">
 <attribute name="VALUE" x="207.645" y="223.52" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="FD1" gate="G$1" x="149.86" y="208.28" smashed="yes"/>
-<instance part="FD2" gate="G$1" x="157.48" y="208.28" smashed="yes"/>
-<instance part="FD3" gate="G$1" x="165.1" y="208.28" smashed="yes"/>
 <instance part="C3" gate="G$1" x="106.68" y="144.78" smashed="yes" rot="MR0">
 <attribute name="NAME" x="105.156" y="145.161" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="105.156" y="140.081" size="1.778" layer="96" rot="MR0"/>
@@ -20511,7 +20484,6 @@ voltage to VDDB</text>
 <instance part="GND20" gate="1" x="71.12" y="180.34" smashed="yes" rot="R270">
 <attribute name="VALUE" x="68.58" y="182.88" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="FD4" gate="G$1" x="172.72" y="208.28" smashed="yes"/>
 <instance part="Y1" gate="G$1" x="91.44" y="182.88" smashed="yes">
 <attribute name="NAME" x="86.35886875" y="185.166509375" size="1.7784" layer="95"/>
 <attribute name="VALUE" x="85.85093125" y="179.06926875" size="1.778340625" layer="96"/>
