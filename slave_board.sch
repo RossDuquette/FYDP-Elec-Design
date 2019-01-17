@@ -15951,8 +15951,6 @@ Metric Code Size 4564</description>
 <part name="C19" library="smoothio" deviceset="UCS2E470MHD1TO" device=""/>
 <part name="D7" library="smoothio" deviceset="SK520TR" device=""/>
 <part name="D8" library="smoothio" deviceset="SK520TR" device=""/>
-<part name="GND79" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND80" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -17681,19 +17679,13 @@ but not too close that cant solder</text>
 <attribute name="NAME" x="266.7" y="210.82" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="271.78" y="210.82" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="D7" gate="G$1" x="314.96" y="111.76" smashed="yes" rot="R180">
-<attribute name="NAME" x="312.42" y="111.2774" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="312.42" y="114.0714" size="1.778" layer="96" rot="R180"/>
+<instance part="D7" gate="G$1" x="302.26" y="114.3" smashed="yes" rot="R90">
+<attribute name="NAME" x="301.7774" y="116.84" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="304.5714" y="116.84" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D8" gate="G$1" x="314.96" y="76.2" smashed="yes" rot="R180">
-<attribute name="NAME" x="312.42" y="75.7174" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="312.42" y="78.5114" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="GND79" gate="1" x="325.12" y="111.76" smashed="yes" rot="R90">
-<attribute name="VALUE" x="327.66" y="109.22" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="GND80" gate="1" x="322.58" y="76.2" smashed="yes" rot="R90">
-<attribute name="VALUE" x="325.12" y="73.66" size="1.778" layer="96" rot="R90"/>
+<instance part="D8" gate="G$1" x="302.26" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="301.7774" y="81.28" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="304.5714" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND6" gate="1" x="276.86" y="205.74" smashed="yes">
 <attribute name="VALUE" x="274.32" y="203.2" size="1.778" layer="96"/>
@@ -17834,16 +17826,6 @@ but not too close that cant solder</text>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="GND73" gate="1" pin="GND"/>
 <wire x1="248.92" y1="55.88" x2="248.92" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D7" gate="G$1" pin="A"/>
-<pinref part="GND79" gate="1" pin="GND"/>
-<wire x1="322.58" y1="111.76" x2="317.5" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="D8" gate="G$1" pin="A"/>
-<pinref part="GND80" gate="1" pin="GND"/>
-<wire x1="320.04" y1="76.2" x2="317.5" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="-"/>
@@ -18453,22 +18435,6 @@ but not too close that cant solder</text>
 <label x="254" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BLENDER1-" class="0">
-<segment>
-<wire x1="287.02" y1="76.2" x2="312.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="284.48" y="76.2" size="1.778" layer="95"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
-<pinref part="D8" gate="G$1" pin="C"/>
-</segment>
-</net>
-<net name="BLENDER0-" class="0">
-<segment>
-<wire x1="287.02" y1="111.76" x2="312.42" y2="111.76" width="0.1524" layer="91"/>
-<label x="284.48" y="111.76" size="1.778" layer="95"/>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<pinref part="D7" gate="G$1" pin="C"/>
-</segment>
-</net>
 <net name="CURRSENS0-" class="0">
 <segment>
 <wire x1="287.02" y1="86.36" x2="287.02" y2="101.6" width="0.1524" layer="91"/>
@@ -18481,6 +18447,34 @@ but not too close that cant solder</text>
 <wire x1="287.02" y1="50.8" x2="287.02" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="S"/>
 <label x="287.02" y="50.8" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="BLENDER0-" class="0">
+<segment>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="287.02" y1="111.76" x2="302.26" y2="111.76" width="0.1524" layer="91"/>
+<label x="287.02" y="111.76" size="1.778" layer="95"/>
+<pinref part="D7" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="BLENDER1-" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="287.02" y1="76.2" x2="302.26" y2="76.2" width="0.1524" layer="91"/>
+<label x="287.02" y="76.2" size="1.778" layer="95"/>
+<pinref part="D8" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="V-HVDC" class="4">
+<segment>
+<pinref part="D7" gate="G$1" pin="C"/>
+<wire x1="302.26" y1="116.84" x2="325.12" y2="116.84" width="0.1524" layer="91"/>
+<label x="314.96" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D8" gate="G$1" pin="C"/>
+<wire x1="302.26" y1="81.28" x2="325.12" y2="81.28" width="0.1524" layer="91"/>
+<label x="314.96" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
