@@ -15911,10 +15911,8 @@ Metric Code Size 4564</description>
 <part name="K1" library="ORWH-SH-112D1F" deviceset="ORWH-SH-112D1F" device=""/>
 <part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R10" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="220OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="220"/>
 <part name="GND50" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R12" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="220OHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="220"/>
 <part name="GND55" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="smoothio" deviceset="PHB45NQ15T" device=""/>
@@ -16061,6 +16059,8 @@ Metric Code Size 4564</description>
 <part name="GND63" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="J13" library="smoothio" deviceset="OSTVN08A150" device=""/>
+<part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND66" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17651,18 +17651,12 @@ but not too close that cant solder</text>
 <instance part="P+29" gate="1" x="241.3" y="35.56" smashed="yes">
 <attribute name="VALUE" x="238.76" y="30.48" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND34" gate="1" x="287.02" y="60.96" smashed="yes">
-<attribute name="VALUE" x="284.48" y="58.42" size="1.778" layer="96"/>
-</instance>
 <instance part="R10" gate="G$1" x="223.52" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="221.996" y="60.96" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="225.044" y="60.96" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
 <instance part="GND50" gate="1" x="223.52" y="50.8" smashed="yes">
 <attribute name="VALUE" x="220.98" y="48.26" size="1.778" layer="96"/>
-</instance>
-<instance part="GND51" gate="1" x="287.02" y="96.52" smashed="yes">
-<attribute name="VALUE" x="284.48" y="93.98" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="223.52" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="221.996" y="96.52" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -17852,19 +17846,9 @@ but not too close that cant solder</text>
 <wire x1="284.48" y1="20.32" x2="284.48" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="287.02" y1="63.5" x2="287.02" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="GND34" gate="1" pin="GND"/>
-<pinref part="Q2" gate="G$1" pin="S"/>
-</segment>
-<segment>
 <wire x1="223.52" y1="53.34" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="GND50" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="287.02" y1="99.06" x2="287.02" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="GND51" gate="1" pin="GND"/>
-<pinref part="Q1" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <wire x1="223.52" y1="88.9" x2="223.52" y2="91.44" width="0.1524" layer="91"/>
@@ -18499,7 +18483,15 @@ but not too close that cant solder</text>
 <label x="254" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CURRSENS0-" class="0">
+<net name="BLENDER1-" class="0">
+<segment>
+<wire x1="287.02" y1="76.2" x2="312.42" y2="76.2" width="0.1524" layer="91"/>
+<label x="284.48" y="76.2" size="1.778" layer="95"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<pinref part="D8" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="BLENDER0-" class="0">
 <segment>
 <wire x1="287.02" y1="111.76" x2="312.42" y2="111.76" width="0.1524" layer="91"/>
 <label x="284.48" y="111.76" size="1.778" layer="95"/>
@@ -18507,12 +18499,18 @@ but not too close that cant solder</text>
 <pinref part="D7" gate="G$1" pin="C"/>
 </segment>
 </net>
+<net name="CURRSENS0-" class="0">
+<segment>
+<wire x1="287.02" y1="86.36" x2="287.02" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<label x="287.02" y="86.36" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
 <net name="CURRSENS1-" class="0">
 <segment>
-<wire x1="287.02" y1="76.2" x2="312.42" y2="76.2" width="0.1524" layer="91"/>
-<label x="284.48" y="76.2" size="1.778" layer="95"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
-<pinref part="D8" gate="G$1" pin="C"/>
+<wire x1="287.02" y1="50.8" x2="287.02" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<label x="287.02" y="50.8" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
@@ -18668,6 +18666,12 @@ need 3.5mm diameter</text>
 <instance part="GND46" gate="1" x="190.5" y="205.74" smashed="yes">
 <attribute name="VALUE" x="187.96" y="203.2" size="1.778" layer="96"/>
 </instance>
+<instance part="GND64" gate="1" x="119.38" y="182.88" smashed="yes">
+<attribute name="VALUE" x="116.84" y="180.34" size="1.778" layer="96"/>
+</instance>
+<instance part="GND66" gate="1" x="25.4" y="182.88" smashed="yes">
+<attribute name="VALUE" x="22.86" y="180.34" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18779,6 +18783,28 @@ need 3.5mm diameter</text>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="C37" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="IN-"/>
+<wire x1="139.7" y1="208.28" x2="132.08" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="208.28" x2="132.08" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="119.38" y1="200.66" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="198.12" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
+<junction x="119.38" y="198.12"/>
+<pinref part="GND64" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="IN-"/>
+<wire x1="45.72" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="208.28" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="200.66" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="198.12" x2="25.4" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
+<junction x="25.4" y="198.12"/>
+<pinref part="GND66" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="V-12V_PROT" class="1">
@@ -18939,17 +18965,6 @@ need 3.5mm diameter</text>
 <wire x1="246.38" y1="210.82" x2="226.06" y2="210.82" width="0.1524" layer="91"/>
 <label x="226.06" y="210.82" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="U7" gate="A" pin="IN+"/>
-<wire x1="38.1" y1="210.82" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="215.9" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
-<label x="25.4" y="226.06" size="1.778" layer="95"/>
-<wire x1="25.4" y1="218.44" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="210.82" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="218.44" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
-<junction x="25.4" y="218.44"/>
-</segment>
 </net>
 <net name="BLENDER0-" class="0">
 <segment>
@@ -18958,17 +18973,6 @@ need 3.5mm diameter</text>
 <wire x1="246.38" y1="233.68" x2="251.46" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="246.38" y1="231.14" x2="226.06" y2="231.14" width="0.1524" layer="91"/>
 <label x="226.06" y="231.14" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U3" gate="A" pin="IN+"/>
-<wire x1="132.08" y1="210.82" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="215.9" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
-<label x="119.38" y="226.06" size="1.778" layer="95"/>
-<wire x1="119.38" y1="218.44" x2="119.38" y2="233.68" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="210.82" x2="132.08" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="218.44" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
-<junction x="119.38" y="218.44"/>
 </segment>
 </net>
 <net name="CURR_SENS0" class="0">
@@ -19038,32 +19042,6 @@ need 3.5mm diameter</text>
 <label x="50.8" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CURRSENS0-" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="IN-"/>
-<wire x1="139.7" y1="208.28" x2="132.08" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="208.28" x2="132.08" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="200.66" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="132.08" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="198.12" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
-<junction x="119.38" y="198.12"/>
-<label x="119.38" y="187.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CURRSENS1-" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="IN-"/>
-<wire x1="45.72" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="208.28" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="200.66" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
-<label x="25.4" y="187.96" size="1.778" layer="95"/>
-<wire x1="25.4" y1="198.12" x2="25.4" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
-<junction x="25.4" y="198.12"/>
-</segment>
-</net>
 <net name="V-5_LOAD" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="V+"/>
@@ -19086,6 +19064,32 @@ need 3.5mm diameter</text>
 <junction x="45.72" y="238.76"/>
 <wire x1="45.72" y1="246.38" x2="66.04" y2="246.38" width="0.1524" layer="91"/>
 <label x="53.34" y="246.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CURRSENS0-" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="IN+"/>
+<wire x1="132.08" y1="210.82" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="215.9" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
+<label x="119.38" y="226.06" size="1.778" layer="95"/>
+<wire x1="119.38" y1="218.44" x2="119.38" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="210.82" x2="132.08" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="218.44" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
+<junction x="119.38" y="218.44"/>
+</segment>
+</net>
+<net name="CURRSENS1-" class="0">
+<segment>
+<pinref part="U7" gate="A" pin="IN+"/>
+<wire x1="38.1" y1="210.82" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="215.9" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
+<label x="25.4" y="226.06" size="1.778" layer="95"/>
+<wire x1="25.4" y1="218.44" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="210.82" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="218.44" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
+<junction x="25.4" y="218.44"/>
 </segment>
 </net>
 </nets>
