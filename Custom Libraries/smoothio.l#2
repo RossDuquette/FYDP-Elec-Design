@@ -179,6 +179,7 @@
 <package name="SSQ12">
 <smd name="2" x="-1.524" y="0" dx="3.175" dy="2.032" layer="1" rot="R90"/>
 <smd name="1" x="1.524" y="0" dx="3.175" dy="2.032" layer="1" rot="R90"/>
+<text x="-1.905" y="2.286" size="0.8128" layer="25">&gt;NAME</text>
 </package>
 <package name="SK520TR">
 <smd name="1" x="-3.175" y="0" dx="3.175" dy="5.2832" layer="1"/>

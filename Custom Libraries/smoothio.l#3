@@ -183,6 +183,7 @@
 <package name="SK520TR">
 <smd name="1" x="-3.175" y="0" dx="3.175" dy="5.2832" layer="1"/>
 <smd name="2" x="2.8956" y="0" dx="3.175" dy="5.2832" layer="1"/>
+<text x="-2.032" y="3.683" size="0.8128" layer="25">&gt;NAME</text>
 </package>
 <package name="PHB45NQ15T">
 <smd name="1" x="-2.54" y="0" dx="3.0988" dy="1.2954" layer="1" rot="R90"/>
