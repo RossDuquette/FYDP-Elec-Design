@@ -4913,68 +4913,6 @@ Warning: This is the KIT version of this package. This package has a smaller dia
 </deviceset>
 </devicesets>
 </library>
-<library name="WSL1206R0100FEA">
-<packages>
-<package name="RESC3216X90">
-<description>&lt;b&gt;RESISTOR&lt;/b&gt;</description>
-<wire x1="-2.423" y1="1.133" x2="2.423" y2="1.133" width="0.0508" layer="39"/>
-<wire x1="2.423" y1="-1.133" x2="-2.423" y2="-1.133" width="0.0508" layer="39"/>
-<wire x1="-2.423" y1="-1.133" x2="-2.423" y2="1.133" width="0.0508" layer="39"/>
-<wire x1="2.423" y1="1.133" x2="2.423" y2="-1.133" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<text x="-2.52" y="1.22" size="0.8" layer="25">&gt;NAME</text>
-<text x="-2.52" y="-2.24" size="0.8" layer="27">&gt;VALUE</text>
-<wire x1="-0.4" y1="0.8" x2="0.4" y2="0.8" width="0.127" layer="21"/>
-<wire x1="-0.4" y1="-0.8" x2="0.4" y2="-0.8" width="0.127" layer="21"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="WSL1206R0100FEA">
-<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
-<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
-<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
-<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="7.62" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="1" x="-7.62" y="0" visible="pad" length="middle" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="WSL1206R0100FEA" prefix="R">
-<description>.01 OHM 1% 1/4W</description>
-<gates>
-<gate name="G$1" symbol="WSL1206R0100FEA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RESC3216X90">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Unavailable"/>
-<attribute name="DESCRIPTION" value=" Res Metal Strip 1206 0.01 Ohm 1% 0.25W_1/4W_ ?75ppm/C Molded SMD Automotive Embossed Plastic T/R "/>
-<attribute name="MF" value="Vishay Dale"/>
-<attribute name="MP" value="WSL1206R0100FEA"/>
-<attribute name="PACKAGE" value="1206 Vishay"/>
-<attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Connectors" urn="urn:adsk.eagle:library:513">
 <description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
 This library contains electrically-functional connectors. 
@@ -8579,6 +8517,23 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <wire x1="0" y1="6.5" x2="0" y2="0" width="0.1524" layer="21"/>
 <text x="0" y="7" size="0.6096" layer="25">&gt;NAME</text>
 </package>
+<package name="CSR1206FT50L0" urn="urn:adsk.eagle:footprint:39619/1" locally_modified="yes">
+<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE_D">
@@ -8821,6 +8776,21 @@ Switches electrical signals</description>
 <pin name="7" x="5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="8" x="5.08" y="10.16" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="RESISTOR">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="1.524" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.524" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MBR0530" prefix="D">
@@ -9020,6 +8990,22 @@ Switches electrical signals</description>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CSR1206FT50L0">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CSR1206FT50L0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15885,12 +15871,12 @@ Metric Code Size 4564</description>
 <part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R14" library="WSL1206R0100FEA" deviceset="WSL1206R0100FEA" device=""/>
+<part name="R14" library="smoothio" deviceset="CSR1206FT50L0" device=""/>
 <part name="U3" library="INA213AIDCKT" deviceset="INA213AIDCKT" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R1" library="WSL1206R0100FEA" deviceset="WSL1206R0100FEA" device=""/>
+<part name="R1" library="smoothio" deviceset="CSR1206FT50L0" device=""/>
 <part name="J24" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="PTH2" package3d_urn="urn:adsk.eagle:package:38043/1"/>
 <part name="J25" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="P+28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
@@ -18773,7 +18759,7 @@ need 3.5mm diameter</text>
 <wire x1="139.7" y1="208.28" x2="132.08" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="208.28" x2="132.08" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="200.66" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="203.2" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="198.12" x2="119.38" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="198.12" x2="119.38" y2="185.42" width="0.1524" layer="91"/>
 <junction x="119.38" y="198.12"/>
@@ -18784,7 +18770,7 @@ need 3.5mm diameter</text>
 <wire x1="45.72" y1="208.28" x2="38.1" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="208.28" x2="38.1" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="200.66" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="203.2" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="198.12" x2="25.4" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="198.12" x2="25.4" y2="198.12" width="0.1524" layer="91"/>
 <junction x="25.4" y="198.12"/>
@@ -19055,7 +19041,7 @@ need 3.5mm diameter</text>
 <pinref part="U3" gate="A" pin="IN+"/>
 <wire x1="132.08" y1="210.82" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="215.9" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="213.36" x2="119.38" y2="218.44" width="0.1524" layer="91"/>
 <label x="119.38" y="226.06" size="1.778" layer="95"/>
 <wire x1="119.38" y1="218.44" x2="119.38" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="210.82" x2="132.08" y2="218.44" width="0.1524" layer="91"/>
@@ -19068,7 +19054,7 @@ need 3.5mm diameter</text>
 <pinref part="U7" gate="A" pin="IN+"/>
 <wire x1="38.1" y1="210.82" x2="45.72" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="215.9" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="213.36" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
 <label x="25.4" y="226.06" size="1.778" layer="95"/>
 <wire x1="25.4" y1="218.44" x2="25.4" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="210.82" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
