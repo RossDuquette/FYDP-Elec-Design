@@ -17353,6 +17353,24 @@ voltage to VDDB</text>
 <junction x="81.28" y="73.66"/>
 <label x="93.98" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J22" gate="JP1" pin="1"/>
+<pinref part="JP11" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="73.66" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="JP17" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="60.96" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
+<junction x="48.26" y="73.66"/>
+</segment>
+<segment>
+<pinref part="J17" gate="JP1" pin="1"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="121.92" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="109.22" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
+<junction x="48.26" y="121.92"/>
+</segment>
 </net>
 <net name="DSDA+" class="0">
 <segment>
@@ -17389,6 +17407,24 @@ voltage to VDDB</text>
 <wire x1="83.82" y1="60.96" x2="83.82" y2="76.2" width="0.1524" layer="91"/>
 <junction x="83.82" y="76.2"/>
 <label x="93.98" y="76.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J22" gate="JP1" pin="2"/>
+<pinref part="JP12" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="JP18" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="68.58" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
+<junction x="50.8" y="76.2"/>
+</segment>
+<segment>
+<pinref part="J17" gate="JP1" pin="2"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="JP10" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="116.84" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<junction x="50.8" y="124.46"/>
 </segment>
 </net>
 <net name="DSCL+" class="0">
@@ -17427,6 +17463,24 @@ voltage to VDDB</text>
 <label x="93.98" y="83.82" size="1.778" layer="95"/>
 <pinref part="JP14" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="JP16" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="83.82" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="J22" gate="JP1" pin="5"/>
+<wire x1="50.8" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<junction x="50.8" y="83.82"/>
+<pinref part="JP14" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="J17" gate="JP1" pin="5"/>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="JP8" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="132.08" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="132.08" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
+<junction x="50.8" y="132.08"/>
+</segment>
 </net>
 <net name="DSCL-" class="0">
 <segment>
@@ -17464,52 +17518,6 @@ voltage to VDDB</text>
 <junction x="81.28" y="81.28"/>
 <label x="93.98" y="81.28" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="J17" gate="JP1" pin="4"/>
-<wire x1="38.1" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="JP4" gate="G$1" pin="1"/>
-<pinref part="JP7" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="129.54" x2="48.26" y2="147.32" width="0.1524" layer="91"/>
-<junction x="48.26" y="129.54"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="J17" gate="JP1" pin="5"/>
-<pinref part="JP5" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="JP8" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="132.08" x2="66.04" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="132.08" x2="50.8" y2="139.7" width="0.1524" layer="91"/>
-<junction x="50.8" y="132.08"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="J17" gate="JP1" pin="2"/>
-<pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="JP10" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="116.84" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
-<junction x="50.8" y="124.46"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="J17" gate="JP1" pin="1"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="121.92" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="JP9" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="121.92" x2="58.42" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="109.22" x2="48.26" y2="121.92" width="0.1524" layer="91"/>
-<junction x="48.26" y="121.92"/>
-</segment>
-</net>
-<net name="N$19" class="0">
 <segment>
 <pinref part="J22" gate="JP1" pin="4"/>
 <wire x1="38.1" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
@@ -17519,38 +17527,14 @@ voltage to VDDB</text>
 <wire x1="48.26" y1="81.28" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
 <junction x="48.26" y="81.28"/>
 </segment>
-</net>
-<net name="N$23" class="0">
 <segment>
-<pinref part="J22" gate="JP1" pin="2"/>
-<pinref part="JP12" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="JP18" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="76.2" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="68.58" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<junction x="50.8" y="76.2"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<pinref part="J22" gate="JP1" pin="1"/>
-<pinref part="JP11" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="73.66" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="JP17" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="60.96" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
-<junction x="48.26" y="73.66"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="JP16" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="83.82" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="83.82" x2="50.8" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="J22" gate="JP1" pin="5"/>
-<wire x1="50.8" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
-<junction x="50.8" y="83.82"/>
-<pinref part="JP14" gate="G$1" pin="1"/>
+<pinref part="J17" gate="JP1" pin="4"/>
+<wire x1="38.1" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<pinref part="JP7" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="129.54" x2="58.42" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="129.54" x2="48.26" y2="147.32" width="0.1524" layer="91"/>
+<junction x="48.26" y="129.54"/>
 </segment>
 </net>
 </nets>
