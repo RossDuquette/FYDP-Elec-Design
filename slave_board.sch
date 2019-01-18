@@ -17528,7 +17528,6 @@ voltage to VDDB</text>
 <plain>
 <text x="68.58" y="246.38" size="2.54" layer="91">DC Motor Driver Uni-Direction</text>
 <text x="312.42" y="226.06" size="2.54" layer="91">Cup/Carousel Stepper Driver</text>
-<text x="231.14" y="137.16" size="1.778" layer="91">make sure to do quick thermal calculations for LS switch</text>
 <text x="276.86" y="236.22" size="1.778" layer="91">for Pololu: https://www.pololu.com/product/2133/specs (uses DRV8825PWP)
 Need heat-sinking or forced air
 </text>
