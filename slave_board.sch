@@ -16068,13 +16068,19 @@ Metric Code Size 4564</description>
 <part name="GND66" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="F2" library="smoothio" deviceset="SSQ7" device=""/>
 <part name="F3" library="smoothio" deviceset="SSQ7" device=""/>
-<part name="GLED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R17" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
-<part name="GLED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
 <part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R24" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 <part name="C38" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0603-16V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1.0uF"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
+<part name="GND79" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R25" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
+<part name="GND80" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R26" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
 </parts>
 <sheets>
 <sheet>
@@ -16224,7 +16230,7 @@ voltage to VDDB</text>
 <attribute name="NAME" x="74.676" y="160.401" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="74.676" y="155.321" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GLED1" gate="G$1" x="337.82" y="147.32" smashed="yes" rot="R90">
+<instance part="LED3" gate="G$1" x="337.82" y="147.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="342.392" y="150.876" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="342.392" y="153.035" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -16235,7 +16241,7 @@ voltage to VDDB</text>
 <attribute name="NAME" x="327.66" y="148.844" size="1.778" layer="95" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="327.66" y="145.796" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="GLED2" gate="G$1" x="332.74" y="144.78" smashed="yes" rot="R90">
+<instance part="LED4" gate="G$1" x="332.74" y="144.78" smashed="yes" rot="R90">
 <attribute name="NAME" x="337.312" y="148.336" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="337.312" y="150.495" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -16249,6 +16255,28 @@ voltage to VDDB</text>
 <instance part="C38" gate="G$1" x="93.98" y="142.24" smashed="yes">
 <attribute name="NAME" x="95.504" y="145.161" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="95.504" y="140.081" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="LED1" gate="G$1" x="337.82" y="157.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="342.392" y="161.036" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="342.392" y="163.195" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND79" gate="1" x="347.98" y="157.48" smashed="yes" rot="R90">
+<attribute name="VALUE" x="350.52" y="154.94" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R25" gate="G$1" x="327.66" y="157.48" smashed="yes">
+<attribute name="NAME" x="327.66" y="159.004" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="327.66" y="155.956" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="LED2" gate="G$1" x="332.74" y="154.94" smashed="yes" rot="R90">
+<attribute name="NAME" x="337.312" y="158.496" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="337.312" y="160.655" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND80" gate="1" x="347.98" y="154.94" smashed="yes" rot="R90">
+<attribute name="VALUE" x="350.52" y="152.4" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R26" gate="G$1" x="322.58" y="154.94" smashed="yes">
+<attribute name="NAME" x="322.58" y="156.464" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="322.58" y="153.416" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 </instances>
 <busses>
@@ -16435,12 +16463,22 @@ voltage to VDDB</text>
 <segment>
 <wire x1="345.44" y1="147.32" x2="342.9" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="GND34" gate="1" pin="GND"/>
-<pinref part="GLED1" gate="G$1" pin="C"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="345.44" y1="144.78" x2="337.82" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND51" gate="1" pin="GND"/>
-<pinref part="GLED2" gate="G$1" pin="C"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="345.44" y1="157.48" x2="342.9" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="GND79" gate="1" pin="GND"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="345.44" y1="154.94" x2="337.82" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="GND80" gate="1" pin="GND"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -16614,20 +16652,6 @@ voltage to VDDB</text>
 <pinref part="IC3" gate="1" pin="(SCK/PCINT1)PB1"/>
 </segment>
 </net>
-<net name="PIVOT_INB" class="0">
-<segment>
-<wire x1="223.52" y1="81.28" x2="205.74" y2="81.28" width="0.1524" layer="91"/>
-<label x="207.01" y="81.915" size="1.6764" layer="95"/>
-<pinref part="IC3" gate="1" pin="(TXD0)PE1"/>
-</segment>
-</net>
-<net name="PIVOT_INA" class="0">
-<segment>
-<wire x1="223.52" y1="78.74" x2="205.74" y2="78.74" width="0.1524" layer="91"/>
-<label x="207.01" y="79.375" size="1.6764" layer="95"/>
-<pinref part="IC3" gate="1" pin="(RXD0/PCIN8)PE0"/>
-</segment>
-</net>
 <net name="DIR" class="2">
 <segment>
 <wire x1="205.74" y1="162.56" x2="223.52" y2="162.56" width="0.1524" layer="91"/>
@@ -16722,6 +16746,9 @@ voltage to VDDB</text>
 <wire x1="302.26" y1="157.48" x2="284.48" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="ADD_DIGITAL" gate="A" pin="2"/>
 <label x="284.48" y="157.48" size="1.778" layer="95"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="302.26" y1="157.48" x2="322.58" y2="157.48" width="0.1524" layer="91"/>
+<junction x="302.26" y="157.48"/>
 </segment>
 </net>
 <net name="ADD_D23" class="0">
@@ -16734,6 +16761,9 @@ voltage to VDDB</text>
 <wire x1="302.26" y1="154.94" x2="284.48" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="ADD_DIGITAL" gate="A" pin="3"/>
 <label x="284.48" y="154.94" size="1.778" layer="95"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="302.26" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
+<junction x="302.26" y="154.94"/>
 </segment>
 </net>
 <net name="ADD_D24" class="0">
@@ -16746,8 +16776,9 @@ voltage to VDDB</text>
 <wire x1="302.26" y1="147.32" x2="284.48" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="ADD_DIGITAL" gate="A" pin="6"/>
 <label x="284.48" y="147.32" size="1.778" layer="95"/>
-<wire x1="302.26" y1="147.32" x2="322.58" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="322.58" y1="147.32" x2="302.26" y2="147.32" width="0.1524" layer="91"/>
+<junction x="302.26" y="147.32"/>
 </segment>
 </net>
 <net name="ADD_D25" class="0">
@@ -16760,36 +16791,9 @@ voltage to VDDB</text>
 <wire x1="302.26" y1="144.78" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="ADD_DIGITAL" gate="A" pin="7"/>
 <label x="284.48" y="144.78" size="1.778" layer="95"/>
-<wire x1="302.26" y1="144.78" x2="317.5" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="FROZEN3_EN" class="0">
-<segment>
-<wire x1="114.3" y1="109.22" x2="134.62" y2="109.22" width="0.1524" layer="91"/>
-<label x="115.57" y="109.855" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL1(ICP5)"/>
-</segment>
-</net>
-<net name="FROZEN4_EN" class="0">
-<segment>
-<wire x1="134.62" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
-<label x="115.57" y="107.315" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL0(ICP4)"/>
-</segment>
-</net>
-<net name="LIQUID1_EN" class="0">
-<segment>
-<wire x1="134.62" y1="124.46" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
-<label x="115.57" y="125.095" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL7"/>
-</segment>
-</net>
-<net name="LIQUID2_EN" class="0">
-<segment>
-<wire x1="134.62" y1="121.92" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
-<label x="115.57" y="122.555" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL6"/>
+<wire x1="302.26" y1="144.78" x2="317.5" y2="144.78" width="0.1524" layer="91"/>
+<junction x="302.26" y="144.78"/>
 </segment>
 </net>
 <net name="STEP" class="0">
@@ -16855,32 +16859,11 @@ voltage to VDDB</text>
 <label x="207.01" y="92.075" size="1.6764" layer="95"/>
 </segment>
 </net>
-<net name="LIQUID3_EN" class="0">
-<segment>
-<wire x1="114.3" y1="119.38" x2="134.62" y2="119.38" width="0.1524" layer="91"/>
-<label x="115.57" y="120.015" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL5(OC5C)"/>
-</segment>
-</net>
-<net name="POWDER1_EN" class="0">
-<segment>
-<wire x1="134.62" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
-<label x="115.57" y="117.475" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL4(OC5B)"/>
-</segment>
-</net>
-<net name="FROZEN2_EN" class="0">
-<segment>
-<wire x1="134.62" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
-<label x="115.57" y="112.395" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL2(T5)"/>
-</segment>
-</net>
 <net name="FROZEN1_EN" class="0">
 <segment>
-<wire x1="114.3" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<label x="115.57" y="114.935" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="PL3(OC5A)"/>
+<pinref part="IC3" gate="1" pin="(OC3A/AIN1)PE3"/>
+<wire x1="205.74" y1="86.36" x2="223.52" y2="86.36" width="0.1524" layer="91"/>
+<label x="206.756" y="86.614" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CUP_SENSE0" class="0">
@@ -16914,14 +16897,14 @@ voltage to VDDB</text>
 <net name="N$2" class="0">
 <segment>
 <wire x1="335.28" y1="147.32" x2="332.74" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="GLED1" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <wire x1="330.2" y1="144.78" x2="327.66" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="GLED2" gate="G$1" pin="A"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -16937,6 +16920,83 @@ voltage to VDDB</text>
 <wire x1="220.98" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="1" pin="(TXD1/INT3)PD3"/>
 <label x="205.74" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<wire x1="335.28" y1="157.48" x2="332.74" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<wire x1="330.2" y1="154.94" x2="327.66" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="PIVOT_INA" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PJ0(RXD3/PCINT9)"/>
+<wire x1="134.62" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<label x="121.92" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIVOT_INB" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PJ1(TXD3/PCINT10)"/>
+<wire x1="134.62" y1="63.5" x2="121.92" y2="63.5" width="0.1524" layer="91"/>
+<label x="121.92" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LIQUID3_EN" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PL0(ICP4)"/>
+<wire x1="134.62" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
+<label x="114.3" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LIQUID2_EN" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PL1(ICP5)"/>
+<wire x1="134.62" y1="109.22" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
+<label x="114.3" y="109.22" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LIQUID1_EN" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PL2(T5)"/>
+<wire x1="134.62" y1="111.76" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
+<label x="114.3" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FROZEN4_EN" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PL3(OC5A)"/>
+<wire x1="134.62" y1="114.3" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+<label x="114.3" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FROZEN3_EN" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PL4(OC5B)"/>
+<wire x1="134.62" y1="116.84" x2="114.3" y2="116.84" width="0.1524" layer="91"/>
+<label x="114.3" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FROZEN2_EN" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PL5(OC5C)"/>
+<wire x1="134.62" y1="119.38" x2="114.3" y2="119.38" width="0.1524" layer="91"/>
+<label x="114.3" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="POWDER1_EN" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="PL6"/>
+<wire x1="134.62" y1="121.92" x2="114.3" y2="121.92" width="0.1524" layer="91"/>
+<label x="114.3" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
