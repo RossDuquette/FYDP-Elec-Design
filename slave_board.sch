@@ -16656,13 +16656,6 @@ voltage to VDDB</text>
 <pinref part="IC3" gate="1" pin="PH5(OC4C)"/>
 </segment>
 </net>
-<net name="ELEV_ENC_OUT" class="0">
-<segment>
-<wire x1="220.98" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-<label x="207.645" y="109.855" size="1.778" layer="95"/>
-<pinref part="IC3" gate="1" pin="(TXD1/INT3)PD3"/>
-</segment>
-</net>
 <net name="COOLANT_EN" class="0">
 <segment>
 <wire x1="220.98" y1="127" x2="205.74" y2="127" width="0.1524" layer="91"/>
@@ -16930,6 +16923,20 @@ voltage to VDDB</text>
 <wire x1="330.2" y1="144.78" x2="327.66" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GLED2" gate="G$1" pin="A"/>
 <pinref part="R24" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="ELEV_ENC_A" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="(RXD1/INT2)PD2"/>
+<wire x1="205.74" y1="106.68" x2="220.98" y2="106.68" width="0.1524" layer="91"/>
+<label x="205.74" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ELEV_ENC_B" class="0">
+<segment>
+<wire x1="220.98" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="1" pin="(TXD1/INT3)PD3"/>
+<label x="205.74" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -19299,8 +19306,8 @@ AH1815-P-BDI-ND</text>
 <attribute name="VALUE" x="33.02" y="78.994" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="53.34" y="91.948" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="GND59" gate="1" x="81.28" y="83.82" smashed="yes">
-<attribute name="VALUE" x="78.74" y="81.28" size="1.778" layer="96"/>
+<instance part="GND59" gate="1" x="81.28" y="81.28" smashed="yes">
+<attribute name="VALUE" x="78.74" y="78.74" size="1.778" layer="96"/>
 </instance>
 <instance part="GND63" gate="1" x="68.58" y="66.04" smashed="yes">
 <attribute name="VALUE" x="66.04" y="63.5" size="1.778" layer="96"/>
@@ -19369,10 +19376,7 @@ AH1815-P-BDI-ND</text>
 <segment>
 <pinref part="J2" gate="G$1" pin="5"/>
 <wire x1="63.5" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="6"/>
 <wire x1="66.04" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="83.82" x2="66.04" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="83.82" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 <junction x="66.04" y="81.28"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="63.5" y1="78.74" x2="66.04" y2="78.74" width="0.1524" layer="91"/>
@@ -19458,9 +19462,9 @@ AH1815-P-BDI-ND</text>
 <pinref part="GND63" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="7"/>
+<pinref part="J2" gate="G$1" pin="6"/>
 <pinref part="GND59" gate="1" pin="GND"/>
-<wire x1="63.5" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CAROUSEL_POS" class="0">
@@ -19536,7 +19540,7 @@ AH1815-P-BDI-ND</text>
 <label x="63.5" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="ELEV_ENC_OUT" class="0">
+<net name="ELEV_ENC_A" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="8"/>
 <wire x1="63.5" y1="88.9" x2="78.74" y2="88.9" width="0.1524" layer="91"/>
@@ -19557,6 +19561,13 @@ AH1815-P-BDI-ND</text>
 <pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="119.38" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
 <label x="99.06" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ELEV_ENC_B" class="0">
+<segment>
+<pinref part="J2" gate="G$1" pin="7"/>
+<wire x1="63.5" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+<label x="63.5" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
