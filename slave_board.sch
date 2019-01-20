@@ -8534,6 +8534,11 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
+<package name="SSQ7">
+<smd name="2" x="-1.524" y="0" dx="3.175" dy="2.032" layer="1" rot="R90"/>
+<smd name="1" x="1.524" y="0" dx="3.175" dy="2.032" layer="1" rot="R90"/>
+<text x="-1.905" y="2.286" size="0.8128" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE_D">
@@ -9003,6 +9008,22 @@ Switches electrical signals</description>
 </gates>
 <devices>
 <device name="" package="CSR1206FT50L0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SSQ7" prefix="F">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSQ7">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -16045,6 +16066,15 @@ Metric Code Size 4564</description>
 <part name="J13" library="smoothio" deviceset="OSTVN08A150" device=""/>
 <part name="GND64" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND66" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="F2" library="smoothio" deviceset="SSQ7" device=""/>
+<part name="F3" library="smoothio" deviceset="SSQ7" device=""/>
+<part name="GLED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
+<part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R17" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
+<part name="GLED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2" value="GREEN"/>
+<part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="R24" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="1KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="1k"/>
+<part name="C38" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="1.0UF" device="-0603-16V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="1.0uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -16194,6 +16224,32 @@ voltage to VDDB</text>
 <attribute name="NAME" x="74.676" y="160.401" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="74.676" y="155.321" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="GLED1" gate="G$1" x="337.82" y="147.32" smashed="yes" rot="R90">
+<attribute name="NAME" x="342.392" y="150.876" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="342.392" y="153.035" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND34" gate="1" x="347.98" y="147.32" smashed="yes" rot="R90">
+<attribute name="VALUE" x="350.52" y="144.78" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R17" gate="G$1" x="327.66" y="147.32" smashed="yes">
+<attribute name="NAME" x="327.66" y="148.844" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="327.66" y="145.796" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="GLED2" gate="G$1" x="332.74" y="144.78" smashed="yes" rot="R90">
+<attribute name="NAME" x="337.312" y="148.336" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="337.312" y="150.495" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND51" gate="1" x="347.98" y="144.78" smashed="yes" rot="R90">
+<attribute name="VALUE" x="350.52" y="142.24" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R24" gate="G$1" x="322.58" y="144.78" smashed="yes">
+<attribute name="NAME" x="322.58" y="146.304" size="1.778" layer="95" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="322.58" y="143.256" size="1.778" layer="96" font="vector" align="top-center"/>
+</instance>
+<instance part="C38" gate="G$1" x="93.98" y="142.24" smashed="yes">
+<attribute name="NAME" x="95.504" y="145.161" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="95.504" y="140.081" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16279,6 +16335,10 @@ voltage to VDDB</text>
 <wire x1="106.68" y1="137.16" x2="106.68" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="C38" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="139.7" x2="93.98" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="137.16" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
+<junction x="106.68" y="137.16"/>
 </segment>
 <segment>
 <wire x1="116.84" y1="142.24" x2="116.84" y2="152.4" width="0.1524" layer="91"/>
@@ -16372,6 +16432,16 @@ voltage to VDDB</text>
 <wire x1="271.78" y1="129.54" x2="271.78" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND82" gate="1" pin="GND"/>
 </segment>
+<segment>
+<wire x1="345.44" y1="147.32" x2="342.9" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="GND34" gate="1" pin="GND"/>
+<pinref part="GLED1" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<wire x1="345.44" y1="144.78" x2="337.82" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="GND51" gate="1" pin="GND"/>
+<pinref part="GLED2" gate="G$1" pin="C"/>
+</segment>
 </net>
 <net name="AREF" class="0">
 <segment>
@@ -16380,9 +16450,12 @@ voltage to VDDB</text>
 <pinref part="IC3" gate="1" pin="AREF"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="147.32" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
-<label x="99.06" y="147.32" size="1.778" layer="95"/>
+<wire x1="106.68" y1="147.32" x2="93.98" y2="147.32" width="0.1524" layer="91"/>
+<label x="83.82" y="147.32" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="C38" gate="G$1" pin="1"/>
+<junction x="93.98" y="147.32"/>
+<wire x1="93.98" y1="147.32" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -16680,6 +16753,8 @@ voltage to VDDB</text>
 <wire x1="302.26" y1="147.32" x2="284.48" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="ADD_DIGITAL" gate="A" pin="6"/>
 <label x="284.48" y="147.32" size="1.778" layer="95"/>
+<wire x1="302.26" y1="147.32" x2="322.58" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="ADD_D25" class="0">
@@ -16692,6 +16767,8 @@ voltage to VDDB</text>
 <wire x1="302.26" y1="144.78" x2="284.48" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="ADD_DIGITAL" gate="A" pin="7"/>
 <label x="284.48" y="144.78" size="1.778" layer="95"/>
+<wire x1="302.26" y1="144.78" x2="317.5" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="FROZEN3_EN" class="0">
@@ -16839,6 +16916,20 @@ voltage to VDDB</text>
 <pinref part="IC3" gate="1" pin="(ADC7/TDI)PF7"/>
 <wire x1="205.74" y1="73.66" x2="223.52" y2="73.66" width="0.1524" layer="91"/>
 <label x="205.74" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<wire x1="335.28" y1="147.32" x2="332.74" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="GLED1" gate="G$1" pin="A"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<wire x1="330.2" y1="144.78" x2="327.66" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="GLED2" gate="G$1" pin="A"/>
+<pinref part="R24" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
@@ -18464,12 +18555,14 @@ but not too close that cant solder</text>
 <pinref part="D8" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="V-HVDC" class="4">
+<net name="FUSE0-" class="4">
 <segment>
 <pinref part="D7" gate="G$1" pin="C"/>
 <wire x1="302.26" y1="116.84" x2="325.12" y2="116.84" width="0.1524" layer="91"/>
 <label x="314.96" y="116.84" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="FUSE1-" class="4">
 <segment>
 <pinref part="D8" gate="G$1" pin="C"/>
 <wire x1="302.26" y1="81.28" x2="325.12" y2="81.28" width="0.1524" layer="91"/>
@@ -18634,6 +18727,14 @@ need 3.5mm diameter</text>
 </instance>
 <instance part="GND66" gate="1" x="25.4" y="182.88" smashed="yes">
 <attribute name="VALUE" x="22.86" y="180.34" size="1.778" layer="96"/>
+</instance>
+<instance part="F2" gate="G$1" x="233.68" y="236.22" smashed="yes">
+<attribute name="NAME" x="229.87" y="237.617" size="1.778" layer="95"/>
+<attribute name="VALUE" x="229.87" y="233.299" size="1.778" layer="96"/>
+</instance>
+<instance part="F3" gate="G$1" x="233.68" y="215.9" smashed="yes">
+<attribute name="NAME" x="229.87" y="217.297" size="1.778" layer="95"/>
+<attribute name="VALUE" x="229.87" y="212.979" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -18880,14 +18981,14 @@ need 3.5mm diameter</text>
 </net>
 <net name="V-HVDC" class="4">
 <segment>
-<wire x1="226.06" y1="236.22" x2="251.46" y2="236.22" width="0.1524" layer="91"/>
-<label x="226.06" y="236.22" size="1.778" layer="95"/>
-<pinref part="J24" gate="G$1" pin="1"/>
+<pinref part="F2" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="236.22" x2="218.44" y2="236.22" width="0.1524" layer="91"/>
+<label x="218.44" y="236.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="226.06" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
-<label x="226.06" y="215.9" size="1.778" layer="95"/>
-<pinref part="J9" gate="G$1" pin="1"/>
+<pinref part="F3" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="215.9" x2="218.44" y2="215.9" width="0.1524" layer="91"/>
+<label x="218.44" y="215.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="1">
@@ -19053,6 +19154,22 @@ need 3.5mm diameter</text>
 <wire x1="38.1" y1="210.82" x2="38.1" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="218.44" x2="25.4" y2="218.44" width="0.1524" layer="91"/>
 <junction x="25.4" y="218.44"/>
+</segment>
+</net>
+<net name="FUSE1-" class="4">
+<segment>
+<wire x1="238.76" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
+<label x="238.76" y="215.9" size="1.778" layer="95"/>
+<pinref part="J9" gate="G$1" pin="1"/>
+<pinref part="F3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="FUSE0-" class="4">
+<segment>
+<wire x1="238.76" y1="236.22" x2="251.46" y2="236.22" width="0.1524" layer="91"/>
+<label x="238.76" y="236.22" size="1.778" layer="95"/>
+<pinref part="J24" gate="G$1" pin="1"/>
+<pinref part="F2" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
