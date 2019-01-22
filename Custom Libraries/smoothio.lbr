@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -937,7 +937,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GRM21BR6YA106ME43L">
+<deviceset name="GRM21BR6YA106ME43L" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
@@ -969,7 +969,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="EL3H7">
+<deviceset name="EL3H7" prefix="U">
 <gates>
 <gate name="G$1" symbol="EL3H7" x="0" y="0"/>
 </gates>
@@ -987,7 +987,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="UVK2D101MHD1TN">
+<deviceset name="UVK2D101MHD1TN" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP-POLAR" x="0" y="0"/>
 </gates>
@@ -1003,7 +1003,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DRV8825CARRIER">
+<deviceset name="DRV8825CARRIER" prefix="J">
 <gates>
 <gate name="G$1" symbol="DRV8825CARRIER" x="15.24" y="10.16"/>
 </gates>
@@ -1055,7 +1055,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSTVN06A150">
+<deviceset name="OSTVN06A150" prefix="J">
 <gates>
 <gate name="G$1" symbol="CONN_06" x="0" y="5.08"/>
 </gates>
@@ -1075,7 +1075,7 @@ Switches electrical signals</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CSR1206FT50L0">
+<deviceset name="CSR1206FT50L0" prefix="R">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>

@@ -1010,22 +1010,22 @@ Switches electrical signals</description>
 <devices>
 <device name="" package="DRV8825CARRIER">
 <connects>
-<connect gate="G$1" pin="1" pad="V-STEPPER"/>
-<connect gate="G$1" pin="10" pad="STEP"/>
-<connect gate="G$1" pin="11" pad="/SLEEP"/>
-<connect gate="G$1" pin="12" pad="/RESET"/>
-<connect gate="G$1" pin="13" pad="M2"/>
-<connect gate="G$1" pin="14" pad="M1"/>
-<connect gate="G$1" pin="15" pad="M0"/>
-<connect gate="G$1" pin="16" pad="/EN"/>
-<connect gate="G$1" pin="2" pad="GND"/>
-<connect gate="G$1" pin="3" pad="B2"/>
-<connect gate="G$1" pin="4" pad="B1"/>
-<connect gate="G$1" pin="5" pad="A1"/>
-<connect gate="G$1" pin="6" pad="A2"/>
-<connect gate="G$1" pin="7" pad="/FLT"/>
-<connect gate="G$1" pin="8" pad="GND1"/>
-<connect gate="G$1" pin="9" pad="DIR"/>
+<connect gate="G$1" pin="1" pad="/EN"/>
+<connect gate="G$1" pin="10" pad="/FLT"/>
+<connect gate="G$1" pin="11" pad="A2"/>
+<connect gate="G$1" pin="12" pad="A1"/>
+<connect gate="G$1" pin="13" pad="B1"/>
+<connect gate="G$1" pin="14" pad="B2"/>
+<connect gate="G$1" pin="15" pad="GND"/>
+<connect gate="G$1" pin="16" pad="V-STEPPER"/>
+<connect gate="G$1" pin="2" pad="M0"/>
+<connect gate="G$1" pin="3" pad="M1"/>
+<connect gate="G$1" pin="4" pad="M2"/>
+<connect gate="G$1" pin="5" pad="/RESET"/>
+<connect gate="G$1" pin="6" pad="/SLEEP"/>
+<connect gate="G$1" pin="7" pad="STEP"/>
+<connect gate="G$1" pin="8" pad="DIR"/>
+<connect gate="G$1" pin="9" pad="GND1"/>
 </connects>
 <technologies>
 <technology name=""/>
