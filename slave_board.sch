@@ -7589,6 +7589,8 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <smd name="1" x="-3.175" y="0" dx="3.175" dy="5.2832" layer="1"/>
 <smd name="2" x="2.8956" y="0" dx="3.175" dy="5.2832" layer="1"/>
 <text x="-2.032" y="3.683" size="0.8128" layer="25">&gt;NAME</text>
+<wire x1="0.635" y1="0" x2="-0.762" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.635" y1="0" x2="-0.762" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="DRV8825CARRIER" urn="urn:adsk.eagle:footprint:37760/1" locally_modified="yes">
 <description>&lt;h3&gt;Plated Through Hole -8 Pin&lt;/h3&gt;
