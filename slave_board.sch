@@ -7564,15 +7564,16 @@ N-Channel Logic Level Enhancement Mode Field Effect Transistor</description>
 <smd name="D" x="0" y="6.4389" dx="5.6896" dy="6.1722" layer="1"/>
 </package>
 <package name="EL3H7">
-<smd name="4" x="3.175" y="0.635" dx="1.27" dy="0.635" layer="1"/>
-<smd name="3" x="3.175" y="-0.635" dx="1.27" dy="0.635" layer="1"/>
-<smd name="2" x="-3.175" y="-0.635" dx="1.27" dy="0.635" layer="1"/>
-<smd name="1" x="-3.175" y="0.635" dx="1.27" dy="0.635" layer="1"/>
+<smd name="4" x="3.175" y="0.635" dx="1.5" dy="0.6" layer="1"/>
+<smd name="3" x="3.175" y="-0.635" dx="1.5" dy="0.6" layer="1"/>
+<smd name="2" x="-3.175" y="-0.635" dx="1.5" dy="0.6" layer="1"/>
+<smd name="1" x="-3.175" y="0.635" dx="1.5" dy="0.6" layer="1"/>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-1.27" x2="-2.54" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.127" layer="21"/>
 <text x="-1.905" y="1.651" size="0.8128" layer="25">&gt;NAME</text>
+<circle x="-3.302" y="2.286" radius="0.127" width="0.127" layer="21"/>
 </package>
 <package name="UCS2E470MHD1TO" urn="urn:adsk.eagle:footprint:37387/1" locally_modified="yes">
 <description>5 mm spaced PTHs in 10 mm diameter silk ring</description>
@@ -8541,8 +8542,8 @@ Switches electrical signals</description>
 <wire x1="5.25" y1="4.25" x2="5.25" y2="-4.55" width="0.05" layer="39"/>
 <wire x1="5.25" y1="-4.55" x2="-5.25" y2="-4.55" width="0.05" layer="39"/>
 <wire x1="-5.25" y1="-4.55" x2="-5.25" y2="4.25" width="0.05" layer="39"/>
-<text x="-5.08705" y="5.08705" size="1.27176875" layer="25">NAME</text>
-<text x="-5.09283125" y="-6.366040625" size="1.273209375" layer="27">VALUE</text>
+<text x="-5.08705" y="5.08705" size="1.27176875" layer="25">&gt;NAME</text>
+<text x="-5.09283125" y="-6.366040625" size="1.273209375" layer="27">&gt;VALUE</text>
 <pad name="1" x="-2.5" y="0" drill="1.3" shape="square"/>
 <pad name="2" x="2.5" y="0" drill="1.3"/>
 </package>
