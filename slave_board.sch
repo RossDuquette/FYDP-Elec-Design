@@ -15100,6 +15100,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="power" width="0.508" drill="0.4064">
+<clearance class="1" value="0.254"/>
 </class>
 <class number="2" name="gnd" width="0.2032" drill="0.4064">
 <clearance class="2" value="0.2032"/>
